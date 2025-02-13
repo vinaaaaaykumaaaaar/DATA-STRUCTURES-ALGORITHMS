@@ -3,42 +3,42 @@ step 1: Learn the basics
     -[] Time Complexity(Learn basics and then learn the next steps)
 
 step 2: Build up logical thinking
-    -[X] patterns
+    -[] patterns
 
 step 3: Learn standard template library for C++
      C++ STL
-        -[X] vectors
-        -[X] maps
-        -[X] sets 
+        -[] vectors
+        -[] maps
+        -[] sets 
         
 step 4: Know Basic Math
-    -[X] reverse a number
-    -[X] check palindrome
-    -[X] GCD or HCF
+    -[] reverse a number
+    -[] check palindrome
+    -[] GCD or HCF
     -[] armstrong numbers
-    -[X] print all divisors
+    -[] print all divisors
     -[] check prime numbers
 
 step 5: Learn basic recursion
-    -[X] understand recursion by printing something N times
-    -[X] print name N times using recursion
-    -[X] print 1 to N using recursion
-    -[X] print N to 1 using recursion
-    -[X] sum of first N numbers
-    -[X] factorial of N numbers
-    -[X] reverse an array
-    -[X] check if a string is palindrome or not
-    -[X] fibonacci number
+    -[] understand recursion by printing something N times
+    -[] print name N times using recursion
+    -[] print 1 to N using recursion
+    -[] print N to 1 using recursion
+    -[] sum of first N numbers
+    -[] factorial of N numbers
+    -[] reverse an array
+    -[] check if a string is palindrome or not
+    -[] fibonacci number
 
 step 6: Learn basic Hashing
-    -[X] hashing theory
-    -[X] counting frequency of array elements
-    -[X] finding highest/lowest frequency elements
+    -[] hashing theory
+    -[] counting frequency of array elements
+    -[] finding highest/lowest frequency elements
 
 step 7: Learn important sorting techniques
     a) sorting - 1
-        -[X] selection sort
-        -[X] bubble sort
+        -[] selection sort
+        -[] bubble sort
         -[] insertion sort
     b) sorting - 2
         -[] merge sort
@@ -48,24 +48,24 @@ step 7: Learn important sorting techniques
 
 step 8: Solve problems on arrays (easy -> medium -> hard)
     a) Easy
-        -[X] largest element in an array
-        -[X] second largest element in an array without sorting 
-        -[X] check if array is sorted
-        -[X] remove duplicate from the sorted array (two pointer problem)
-        -[X] left rotate an array by one place
-        -[X] left rotate an array by D place
-        -[X] move zeros to end
-        -[X] linear search
-        -[X] find the union
-        -[X] find missing number in an array
-        -[X] maximum consecutive ones
-        -[X] find the number that appears once and other number twice
-        -[X] longest subarrays with given sum K(positives)
+        -[] largest element in an array
+        -[] second largest element in an array without sorting 
+        -[] check if array is sorted
+        -[] remove duplicate from the sorted array (two pointer problem)
+        -[] left rotate an array by one place
+        -[] left rotate an array by D place
+        -[] move zeros to end
+        -[] linear search
+        -[] find the union
+        -[] find missing number in an array
+        -[] maximum consecutive ones
+        -[] find the number that appears once and other number twice
+        -[] longest subarrays with given sum K(positives)
         -[] longest subarrays with given sum K(positives and negatives)
     b) Medium 
-        -[X] 2sum problem
-        -[X] sort an array of 0's , 1's and 2's
-        -[X] majority element (>n/2 times)
+        -[] 2sum problem
+        -[] sort an array of 0's , 1's and 2's
+        -[] majority element (>n/2 times)
         -[] kadane's algorithm , maximum subarray sum 
         -[] print subarray with maximum subarray sum(extended version of above problem)
         -[] stock buy and sell
@@ -93,12 +93,12 @@ step 8: Solve problems on arrays (easy -> medium -> hard)
 
 step 9: Binary search on 1D , 2D array and search space
     a) binary search on 1D array
-        -[X] binary search to find x in sorted array
-        -[X] implement lower bound
-        -[X] implement upper bound
-        -[X] search insert position
-        -[X] floor/ceil in sorted array
-        -[X] find the first or last occurances of a given number in a sorted array
+        -[] binary search to find x in sorted array
+        -[] implement lower bound
+        -[] implement upper bound
+        -[] search insert position
+        -[] floor/ceil in sorted array
+        -[] find the first or last occurances of a given number in a sorted array
         -[] find the occurances of a number in the sorted array with the duplicates
         -[] search in rotated sorted array 1
         -[] search in rotated sorted array 2
@@ -130,8 +130,8 @@ step 9: Binary search on 1D , 2D array and search space
 
 step 10: Strings (Basics and Medium)
     a) basic and easy string problems
-        [x] remove outermost parenthesis
-        [x] reverse words / palindrome check
+        [] remove outermost parenthesis
+        [] reverse words / palindrome check
         [] largest odd number in a string
         [] largest common prefix
         [] isomorphic string
@@ -148,15 +148,15 @@ step 10: Strings (Basics and Medium)
 
 step 11: Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
     a) learn singly linked-list
-        [X] introduction to linked-list learn about struct and how the node is represented
-        [X] inserting a node in linked-list
-        [X] deleting a node in linked-list
-        [X] find the length of the linked-list(learn traversal)
-        [X] search an element in linked-list
+        [] introduction to linked-list learn about struct and how the node is represented
+        [] inserting a node in linked-list
+        [] deleting a node in linked-list
+        [] find the length of the linked-list(learn traversal)
+        [] search an element in linked-list
     b) learn doubly linked-list
-        [X] introduction to doubly linked-list ,learn about struct and how it is represented
-        [X] insert a node in doubly linked-list
-        [X] delete a node in doubly linked-list
+        [] introduction to doubly linked-list ,learn about struct and how it is represented
+        [] insert a node in doubly linked-list
+        [] delete a node in doubly linked-list
         [] reverse a doubly linked-list
     c) medium problems on linked-list
         [] middle of linked-list(tortoise-hare method)
@@ -186,7 +186,7 @@ step 11: Learn linked-list ( singly linked-list , doubly linked-list, easy -> me
 step 12: Recursion (pattern-wise)
     a) get a strong hold
         [] recursion implementation of atoi()
-        [X] pow(x,n)
+        [] pow(x,n)
         [] count good numbers
         [] sort a stack using recursion
         [] reverse a stack using recursion
@@ -238,13 +238,13 @@ step 13: Bit manipulation (concepts and problems)
 
 step 14: Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
     a) learning
-        [X] implementing stacks using arrays
-        [X] implementing queues using arrays
-        [X] implementing stacks using queues
-        [X] implementing queues using stacks
-        [X] implementing stacks using linked-list
-        [X] implementing queues using linked-list
-        [X] check for balanced parenthesis
+        [] implementing stacks using arrays
+        [] implementing queues using arrays
+        [] implementing stacks using queues
+        [] implementing queues using stacks
+        [] implementing stacks using linked-list
+        [] implementing queues using linked-list
+        [] check for balanced parenthesis
         [] implementing min stack
     b) prefix , postfix , infix conversion problems
         [] infix to postfix conversion using stacks
@@ -331,15 +331,15 @@ step 17: Greedy algorithms (easy , medium and hard)
 
 step 18: Binary trees (traversals , medium and hard problem)
     a) traversals
-        -[X] introduction to trees
-        -[X] binary tree representation in C++
-        -[X] binary tree traversal in binary tree
-        -[X] preorder traversal of a binary tree
-        -[X] inorder traversal of a binary tree
-        -[X] postorder traversal of a binary tree
-        -[X] level order traversal in a spiral form
-        -[X] iterative preorder traversal of binary tree
-        -[X] iterative inorder traversal of binary tree
+        -[] introduction to trees
+        -[] binary tree representation in C++
+        -[] binary tree traversal in binary tree
+        -[] preorder traversal of a binary tree
+        -[] inorder traversal of a binary tree
+        -[] postorder traversal of a binary tree
+        -[] level order traversal in a spiral form
+        -[] iterative preorder traversal of binary tree
+        -[] iterative inorder traversal of binary tree
         -[] post order traversal of binary tree using 2 stacks
         -[] post order traversal of binary tree using 1 stacks
         - Preorder, Inorder, and Postorder Traversal in one Traversal
