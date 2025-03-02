@@ -4,6 +4,7 @@ PROFILE
 "Self-taught software engineer who built and scaled products used by millions. Dropped out to focus on building real-world solutions that matter."
 
 PROJECTS (Most Important Section)
+
 1. DECENTRALIZED SOCIAL NETWORK (50M+ Users)
 - Built and launched a decentralized Twitter alternative 
 - Architected scalable backend handling 100k req/second
