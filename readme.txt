@@ -1,9 +1,9 @@
 step 1: Learn the basics
     -[X] C++ Basics
-    -[] Time Complexity(Learn basics and then learn the next steps)
+    -[X] Time Complexity(Learn basics and then learn the next steps)
 
 step 2: Build up logical thinking
-    -[] patterns
+    -[X] patterns
 
 step 3: Learn standard template library for C++
      C++ STL
