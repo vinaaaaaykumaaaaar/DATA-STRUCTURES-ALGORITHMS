@@ -12,8 +12,8 @@ step 3: Learn standard template library for C++
         -[] sets 
         
 step 4: Know Basic Math
-    -[] reverse a number
-    -[] check palindrome
+    -[X] reverse a number
+    -[X] check palindrome
     -[] GCD or HCF
     -[] armstrong numbers
     -[] print all divisors
