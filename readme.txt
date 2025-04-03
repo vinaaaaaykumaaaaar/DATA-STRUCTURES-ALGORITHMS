@@ -93,7 +93,7 @@ step 8: Solve problems on arrays (easy -> medium -> hard)
 
 step 9: Binary search on 1D , 2D array and search space
     a) binary search on 1D array
-        -[] binary search to find x in sorted array
+        -[X] binary search to find x in sorted array
         -[] implement lower bound
         -[] implement upper bound
         -[] search insert position
