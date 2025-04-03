@@ -31,13 +31,13 @@ step 5: Learn basic recursion
     -[] fibonacci number
 
 step 6: Learn basic Hashing
-    -[] hashing theory
-    -[] counting frequency of array elements
-    -[] finding highest/lowest frequency elements
+    -[X] hashing theory
+    -[X] counting frequency of array elements
+    -[X] finding highest/lowest frequency elements
 
 step 7: Learn important sorting techniques
     a) sorting - 1
-        -[] selection sort
+        -[X] selection sort
         -[] bubble sort
         -[] insertion sort
     b) sorting - 2
@@ -48,7 +48,7 @@ step 7: Learn important sorting techniques
 
 step 8: Solve problems on arrays (easy -> medium -> hard)
     a) Easy
-        -[] largest element in an array
+        -[X] largest element in an array
         -[] second largest element in an array without sorting 
         -[] check if array is sorted
         -[] remove duplicate from the sorted array (two pointer problem)
