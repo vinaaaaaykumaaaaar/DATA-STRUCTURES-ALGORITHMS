@@ -7,7 +7,7 @@ step 2: Build up logical thinking
 
 step 3: Learn standard template library for C++
      C++ STL
-        -[] vectors
+        -[X] vectors
         -[] maps
         -[] sets 
         
