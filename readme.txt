@@ -149,10 +149,10 @@ step 10: Strings (Basics and Medium)
 step 11: Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
     a) learn singly linked-list
         [X] introduction to linked-list learn about struct and how the node is represented
-        [C] inserting a node in linked-list
-        [] deleting a node in linked-list
-        [] find the length of the linked-list(learn traversal)
-        [] search an element in linked-list
+        [X] inserting a node in linked-list
+        [X] deleting a node in linked-list
+        [X] find the length of the linked-list(learn traversal)
+        [X] search an element in linked-list
     b) learn doubly linked-list
         [] introduction to doubly linked-list ,learn about struct and how it is represented
         [] insert a node in doubly linked-list
