@@ -154,10 +154,10 @@ step 11: Learn linked-list ( singly linked-list , doubly linked-list, easy -> me
         [X] find the length of the linked-list(learn traversal)
         [X] search an element in linked-list
     b) learn doubly linked-list
-        [] introduction to doubly linked-list ,learn about struct and how it is represented
-        [] insert a node in doubly linked-list
-        [] delete a node in doubly linked-list
-        [] reverse a doubly linked-list
+        [X] introduction to doubly linked-list ,learn about struct and how it is represented
+        [X] insert a node in doubly linked-list
+        [X] delete a node in doubly linked-list
+        [X] reverse a doubly linked-list
     c) medium problems on linked-list
         [] middle of linked-list(tortoise-hare method)
         [] reverse a linked-list(iterative)
