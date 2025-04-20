@@ -20,10 +20,10 @@ step 4: Know Basic Math
     -[] check prime numbers
 
 step 5: Learn basic recursion
-    -[] understand recursion by printing something N times
-    -[] print name N times using recursion
-    -[] print 1 to N using recursion
-    -[] print N to 1 using recursion
+    -[X] understand recursion by printing something N times
+    -[X] print name N times using recursion
+    -[X] print 1 to N using recursion
+    -[X] print N to 1 using recursion
     -[] sum of first N numbers
     -[] factorial of N numbers
     -[] reverse an array
@@ -331,13 +331,13 @@ step 17: Greedy algorithms (easy , medium and hard)
 
 step 18: Binary trees (traversals , medium and hard problem)
     a) traversals
-        -[] introduction to trees
-        -[] binary tree representation in C++
-        -[] binary tree traversal in binary tree
-        -[] preorder traversal of a binary tree
-        -[] inorder traversal of a binary tree
-        -[] postorder traversal of a binary tree
-        -[] level order traversal in a spiral form
+        -[X] introduction to trees
+        -[X] binary tree representation in C++
+        -[X] binary tree traversal in binary tree
+        -[X] preorder traversal of a binary tree
+        -[X] inorder traversal of a binary tree
+        -[X] postorder traversal of a binary tree
+        -[X] level order traversal in a spiral form
         -[] iterative preorder traversal of binary tree
         -[] iterative inorder traversal of binary tree
         -[] post order traversal of binary tree using 2 stacks
@@ -394,8 +394,8 @@ step 19: Binary search tree (concepts and problems)
 
 step 20: Graphs(concepts and problems)
     a) learning
-        -[] graph and types
-        -[] graph representation in C++
+        -[X] graph and types
+        -[X] graph representation in C++
         -[] connected components / logical explaination
         -[] breadth first search
         -[] deapth first search
