@@ -24,11 +24,11 @@ step 5: Learn basic recursion
     -[X] print name N times using recursion
     -[X] print 1 to N using recursion
     -[X] print N to 1 using recursion
-    -[] sum of first N numbers
-    -[] factorial of N numbers
-    -[] reverse an array
-    -[] check if a string is palindrome or not
-    -[] fibonacci number
+    -[X] sum of first N numbers
+    -[X] factorial of N numbers
+    -[X] reverse an array
+    -[X] check if a string is palindrome or not
+    -[X] fibonacci number
 
 step 6: Learn basic Hashing
     -[X] hashing theory
