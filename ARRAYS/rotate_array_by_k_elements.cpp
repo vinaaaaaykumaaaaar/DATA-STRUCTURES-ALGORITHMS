@@ -37,6 +37,8 @@ void reverse(int start, int end)
 
 void optimal_solution(int k)
 {
+	// Time complexity ->  O(n);
+	// Space complexity -> O(1);
 
 	cout<<"Orignial array"<<endl;
 	cout<<"--------------------"<<endl;
