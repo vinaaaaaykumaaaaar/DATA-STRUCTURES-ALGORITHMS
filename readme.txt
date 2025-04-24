@@ -49,8 +49,8 @@ step 7: Learn important sorting techniques
 step 8: Solve problems on arrays (easy -> medium -> hard)
     a) Easy
         -[X] largest element in an array
-        -[] second largest element in an array without sorting 
-        -[] check if array is sorted
+        -[X] second largest element in an array without sorting 
+        -[X] check if array is sorted
         -[] remove duplicate from the sorted array (two pointer problem)
         -[] left rotate an array by one place
         -[] left rotate an array by D place
