@@ -51,11 +51,11 @@ step 8: Solve problems on arrays (easy -> medium -> hard)
         -[X] largest element in an array
         -[X] second largest element in an array without sorting 
         -[X] check if array is sorted
-        -[] remove duplicate from the sorted array (two pointer problem)
-        -[] left rotate an array by one place
-        -[] left rotate an array by D place
+        -[X] remove duplicate from the sorted array (two pointer problem)
+        -[X] left rotate an array by one place
+        -[X] left rotate an array by D place
         -[] move zeros to end
-        -[] linear search
+        -[X] linear search
         -[] find the union
         -[] find missing number in an array
         -[] maximum consecutive ones
