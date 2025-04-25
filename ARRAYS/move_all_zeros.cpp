@@ -22,6 +22,28 @@ void naive_solution()
 	cout<<endl;	
 }
 
+void optimal_solution()
+{
+	int j = -1;
+	for(int i=0; i<8; i++)
+		if(!a[i]) 
+		{
+			j = i;
+			break;
+		}
+
+	for(int i= j+1; i<8; i++)
+		if(a[i])
+			swap(a[i] , a[j]) , j++;
+
+	cout<<"Optimal Solution"<<endl;
+	for(int i=0; i<8; i++)
+		cout<<a[i]<<" ";
+	cout<<endl;
+}
+			
+
+
 int main()
 {
 	cout<<"Original Array"<<endl;
@@ -30,6 +52,7 @@ int main()
 	cout<<endl;
 	cout<<"---------------------"<<endl;
 
-	naive_solution();
+	// naive_solution();
+	optimal_solution();
 	return 0;
 }
