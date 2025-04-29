@@ -54,9 +54,9 @@ step 8: Solve problems on arrays (easy -> medium -> hard)
         -[X] remove duplicate from the sorted array (two pointer problem)
         -[X] left rotate an array by one place
         -[X] left rotate an array by D place
-        -[] move zeros to end
+        -[X] move zeros to end
         -[X] linear search
-        -[] find the union
+        -[X] find the union
         -[] find missing number in an array
         -[] maximum consecutive ones
         -[] find the number that appears once and other number twice
