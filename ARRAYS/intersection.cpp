@@ -26,6 +26,8 @@ void naive_solution()
 
 void optimal_solution()
 {
+	// time complexity -> O(n+m) -> n and m are the sizes of the given array
+	// space complexity -> O(n+m) -> n and m are the sizes of the given array
 	int i=0 , j=0;
 	vector<int> inter;
 	while(i<5 && j<5)
