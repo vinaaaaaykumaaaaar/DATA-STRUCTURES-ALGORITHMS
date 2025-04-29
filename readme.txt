@@ -57,9 +57,9 @@ step 8: Solve problems on arrays (easy -> medium -> hard)
         -[X] move zeros to end
         -[X] linear search
         -[X] find the union
-        -[] find missing number in an array
-        -[] maximum consecutive ones
-        -[] find the number that appears once and other number twice
+        -[X] find missing number in an array
+        -[X] maximum consecutive ones
+        -[X] find the number that appears once and other number twice
         -[] longest subarrays with given sum K(positives)
         -[] longest subarrays with given sum K(positives and negatives)
     b) Medium 
