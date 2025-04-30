@@ -63,7 +63,7 @@ step 8: Solve problems on arrays (easy -> medium -> hard)
         -[] longest subarrays with given sum K(positives)
         -[] longest subarrays with given sum K(positives and negatives)
     b) Medium 
-        -[] 2sum problem
+        -[X] 2sum problem
         -[] sort an array of 0's , 1's and 2's
         -[] majority element (>n/2 times)
         -[] kadane's algorithm , maximum subarray sum 

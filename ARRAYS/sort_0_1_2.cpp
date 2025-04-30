@@ -1,0 +1,102 @@
+#pragma GCC optimize("03")
+#pragma GCC target ("sse4")
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+typedef long double ld;
+typedef complex<ld> cd;
+ 
+typedef pair<int, int> pi;
+typedef pair<ll,ll> pl;
+typedef pair<ld,ld> pd;
+  
+typedef vector<int> vi;
+typedef vector<ld> vd;
+typedef vector<ll> vl;
+typedef vector<pi> vpi;
+typedef vector<pl> vpl;
+typedef vector<cd> vcd;\
+
+template<class T> using pq = priority_queue<T>;
+template<class T> using pqg = priority_queue<T, vector<T>, greater<T>>;
+
+#define FOR(i, a, b) for (int i=a; i<(b); i++)
+#define F0R(i, a) for (int i=0; i<(a); i++)
+#define FORd(i,a,b) for (int i = (b)-1; i >= a; i--)
+#define F0Rd(i,a) for (int i = (a)-1; i >= 0; i--)
+#define trav(a,x) for (auto& a : x)
+#define uid(a, b) uniform_int_distribution<int>(a, b)(rng)
+
+#define sz(x) (int)(x).size()
+#define mp make_pair
+#define pb push_back
+#define f first
+#define s second
+#define lb lower_bound
+#define ub upper_bound
+#define all(x) x.begin(), x.end()
+#define ins insert
+
+template<class T> bool ckmin(T& a, const T& b) { return b < a ? a = b, 1 : 0; }
+template<class T> bool ckmax(T& a, const T& b) { return a < b ? a = b, 1 : 0; }
+
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+const int MOD = 1000000007;
+const char nl = '\n';
+const int MX = 100001;
+
+ll a[14] = {0,1,2,0,1,2,1,2,0,0,0,1,2,1};
+
+
+      
+
+void better_solution()
+{
+    // time complexity -> O(n)
+    // space complexity -> o(1)
+    
+    int c0=0 , c1=0 , c2=0;
+
+    for(int i=0; i<14; i++)
+    {
+        if(a[i]==0) c0++;
+        else if(a[i] == 1) c1++;
+        else c2++;
+    }
+
+    cout<<c0<<" "<<c1<<" "<<c2<<endl;
+
+    for(int i=0; i<c0; i++) a[i] =0;
+    for(int i=c0; i<c1+c0; i++) a[i] = 1;
+    for(int i=c1+c0; i<c0+c2+c1; i++) a[i] =2;
+
+    for(int i=0; i<14; i++)
+        cout<<a[i]<<" ";
+    cout<<endl;
+
+
+}
+
+void optimal_solution()
+{
+    // time complexity ->
+    // space complexity ->
+
+}
+
+int main()
+{
+    cin.tie(0)->sync_with_stdio(0); 
+    cin.exceptions(cin.failbit);
+            
+    // naive_solution();
+     better_solution();
+    // optimal_solution();
+                                      
+    return 0;
+}
+
