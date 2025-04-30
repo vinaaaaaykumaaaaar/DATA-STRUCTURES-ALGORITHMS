@@ -49,22 +49,35 @@ const int MOD = 1000000007;
 const char nl = '\n';
 const int MX = 100001; 
 
-void solve() {
-     
+void naive_solution()
+{
+    // time complexity -> 
+    // space complexity ->
       
+}
+
+void better_solution()
+{
+    // time complexity ->
+    // space complexity ->
+
+}
+
+void optimal_solution()
+{
+    // time complexity ->
+    // space complexity ->
+
 }
 
 int main()
 {
     cin.tie(0)->sync_with_stdio(0); 
     cin.exceptions(cin.failbit);
-             
-    int T = 1;
-    //    cin >> T;
-    while(T--)
-    {
-     solve();
-    }
+            
+    naive_solution();
+    // better_solution();
+    // optimal_solution();
                                       
     return 0;
 }
