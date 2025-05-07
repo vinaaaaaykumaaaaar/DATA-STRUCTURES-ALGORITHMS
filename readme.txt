@@ -8,8 +8,8 @@ step 2: Build up logical thinking
 step 3: Learn standard template library for C++
      C++ STL
         -[X] vectors
-        -[] maps
-        -[] sets 
+        -[X] maps
+        -[X] sets 
         
 step 4: Know Basic Math
     -[X] reverse a number
