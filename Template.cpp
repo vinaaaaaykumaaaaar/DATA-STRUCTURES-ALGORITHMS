@@ -5,42 +5,25 @@
 #include <map>
 #include <vector>
 #include <set>
+#include <chrono>
 #include <algorithm>
 
 using namespace std;
 
-typedef long long ll;
-typedef long double ld;
- 
-void naive_solution()
+void solve()
 {
-    // time complexity -> 
-    // space complexity ->
-      
-}
-
-void better_solution()
-{
-    // time complexity ->
-    // space complexity ->
 
 }
 
-void optimal_solution()
-{
-    // time complexity ->
-    // space complexity ->
-
-}
 
 int main()
 {
     cin.tie(0)->sync_with_stdio(0); 
     cin.exceptions(cin.failbit);
-            
-    naive_solution();
-    // better_solution();
-    // optimal_solution();
+    
+    cout<<"------------------------------------------\n";
+    solve();
+    cout<<"------------------------------------------\n";
                                       
     return 0;
 }
