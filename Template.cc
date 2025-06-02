@@ -30,7 +30,7 @@ using vll = vector<ll>;
 using pii = pair<int,int>;
 using pll = pair<ll,ll>;
 
-// ----- SHORTCUT MACROS ------------------------------------------------
+// ----- SHORTCUT MACROS -----------------------------------------------
 #define all(x)  (x).begin(), (x).end()
 #define sz(x)   int((x).size())
 #define pb      push_back
@@ -39,7 +39,7 @@ using pll = pair<ll,ll>;
 #define FOR(i,a,b)  for(int i = (a); i <(b); ++i)
 #define ROF(i,a,b)  for(int i = int(b) - 1; i >= (a); --i)
 
-// ----- DEBUGGING (LOCAL ONLY)     --------------------------------------
+// ----- DEBUGGING (LOCAL ONLY)     ------------------------------------
 
 #ifdef LOCAL
     #define dbg(...) __dbg(#__VA_ARGS__, __VA_ARGS__)
@@ -57,7 +57,7 @@ using pll = pair<ll,ll>;
         #define dbg(...) (void)0
     #endif
 
-// ----- SOLVE -----------------------------------------------------------
+// ----- SOLVE ---------------------------------------------------------
 void solve(){
 
 }
