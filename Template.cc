@@ -24,8 +24,8 @@ static auto _fast_io = [](){
 }();
 
 // ----- TYPE ALIASES --------------------------------------------------
-using ll = long long;
-using vl = vector<int>;
+using ll  = long long;
+using vl  = vector<int>;
 using vll = vector<ll>;
 using pii = pair<int,int>;
 using pll = pair<ll,ll>;
