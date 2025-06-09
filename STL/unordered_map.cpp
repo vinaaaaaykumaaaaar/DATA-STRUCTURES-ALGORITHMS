@@ -15,18 +15,14 @@ int main()
       // using insert method
       grades.insert({"Vini",100});
       grades.insert({"Vinay Kumar", 200});
+      grades["Vinay Kumar"] = 400;
       
 
       string name = "Vinay Kumar";
 
 
       cout<<grades.count(name)<<endl;
-
-      for(auto x: grades)
-      {
-            cout<<"name = "<<x.first<<" marks = "<<x.second<<endl;
-      }
-
+      cout<<grades[name]<<endl;
       return 0;
 }
 
