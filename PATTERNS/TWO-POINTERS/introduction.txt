@@ -120,10 +120,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX          T W O - P O I N T E R S           XXX
 7. Problems
 	
 	Easy 
-		[] - Reverse String
-		[] - Move Zeros
-		[] - Squares of Sorted Array
-		[] - Intersection of Two Arrays
+		[X] - Reverse String
+		[X] - Move Zeros
+		[X] - Squares of Sorted Array
+		[X] - Intersection of Two Arrays
 	
 	Medium 
 		[] - Three Sum
