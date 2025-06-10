@@ -126,8 +126,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX          T W O - P O I N T E R S           XXX
 		[X] - Intersection of Two Arrays
 	
 	Medium 
-		[] - Three Sum
-		[] - Container With Most Water
+		[X] - Three Sum
+		[X] - Container With Most Water
 		[] - Sort Colors (Dutch Flag)
 		[] - Remove Nth Node From End
 		[] - Longest Palindromic Substring
