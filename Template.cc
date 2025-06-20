@@ -14,6 +14,8 @@
 #include <limits>
 #include <cassert>
 
+#define LOCAL
+
 using namespace std;
 
 // ----- FAST IO -------------------------------------------------------
@@ -61,7 +63,6 @@ using pll = pair<ll,ll>;
 void solve(){
 
 }
-
 
 int main(){
     int T = 1;
