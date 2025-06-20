@@ -29,7 +29,8 @@ vector<int> triplet(vector<int>& a , int t)
 
 
 
-    vector<vector<int>> threeSum(vector<int>& a) {
+vector<vector<int>> threeSum(vector<int>& a)
+{
         sort(a.begin(), a.end()); 
         int s = a.size();
         vector<vector<int>> v;
@@ -61,7 +62,7 @@ vector<int> triplet(vector<int>& a , int t)
             }
         }
         return v;
-    }
+}
 
 int main()
 {
