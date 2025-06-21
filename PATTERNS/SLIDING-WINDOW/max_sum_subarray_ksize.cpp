@@ -5,24 +5,20 @@
 using namespace std;
 
 int maximumSubArray(vector<int>& arr , int k){
+    int maxSum = 0 , windowSum = 0;
 
-    int maxSum = 0, windowSum = 0 ;
-
-    // creating a initial window 
     for(int i=0; i<k; ++i){
         windowSum += arr[i];
     }
 
-    maxSum = windowSum;
-
-    for(int left=0 , right=k; right<arr.size(); ++left , ++right){
+    for(int left=0, right=k; right<arr.size(); ++left , ++right){
         windowSum -= arr[left];
         windowSum += arr[right];
-        maxSum = max(windowSum , maxSum);
+
+        maxSum = max(maxSum , windowSum);
     }
 
     return maxSum;
-
 }
 
 int main(){
