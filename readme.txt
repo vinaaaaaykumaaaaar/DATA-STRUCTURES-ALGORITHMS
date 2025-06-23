@@ -238,23 +238,23 @@ step 13: Bit manipulation (concepts and problems)
 
 step 14: Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
     a) learning
-        [] implementing stacks using arrays
-        [] implementing queues using arrays
-        [] implementing stacks using queues
-        [] implementing queues using stacks
-        [] implementing stacks using linked-list
-        [] implementing queues using linked-list
-        [] check for balanced parenthesis
-        [] implementing min stack
+        [X] implementing stacks using arrays
+        [X] implementing queues using arrays
+        [X] implementing stacks using queues
+        [X] implementing queues using stacks
+        [X] implementing stacks using linked-list
+        [X] implementing queues using linked-list
+        [X] check for balanced parenthesis
+        [X] implementing min stack
     b) prefix , postfix , infix conversion problems
-        [] infix to postfix conversion using stacks
-        [] prefix to infix conversion
-        [] prefix to postfix conversion
-        [] postfix to prefix conversion
-        [] postfix to infix conversion
-        [] convert infix to prefix notation
+        [X] infix to postfix conversion using stacks
+        [X] prefix to infix conversion
+        [X] prefix to postfix conversion
+        [X] postfix to prefix conversion
+        [X] postfix to infix conversion
+        [X] convert infix to prefix notation
     c) Monotonic stacks / queues problems(very very very important )
-        [] next greater element
+        [X] next greater element
         [] next greater element 2
         [] next smaller element
         [] number of NGE's to right
@@ -274,19 +274,19 @@ step 14: Stacks and Queues(learn pre-in post-fix, monotonic stack , implementati
     
 step 15: Slinding window and two pointer combined problems
     a) medium problems
-        -[] longest substring without repeating characters
+        -[X] longest substring without repeating characters
         -[] maximum consecutive ones 3
-        -[] fruit into baskets
-        -[] longest repeating character replacement
+        -[X] fruit into baskets
+        -[X] longest repeating character replacement
         -[] binary subarray with sum
-        -[] count number of nice subarrays
-        -[] number of substring containing all three characters
-        -[] maximum point you can obtain from card
+        -[X] count number of nice subarrays
+        -[X] number of substring containing all three characters
+        -[X] maximum point you can obtain from card
     b) hard problems
-        -[] longest substring with atmost K distinct characters
-        -[] subarray with K distinct characters
-        -[] minimum window substring
-        -[] minimum window subsequence
+        -[X] longest substring with atmost K distinct characters
+        -[X] subarray with K distinct characters
+        -[X] minimum window substring
+        -[X] minimum window subsequence
     
 step 16: Heaps (learing medium and hard problems)
     a) learning
