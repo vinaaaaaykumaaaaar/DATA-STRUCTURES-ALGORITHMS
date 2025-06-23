@@ -1,38 +1,34 @@
-#include <iostream>
-#include <vector>
-#include <stack>
+#include<iostream>
+#include<vector>
+#include<stack>
 
 using namespace std;
 
 
+vector<int> nextGreaterElement(vector<int>& n){
+    int s = n.size();
+    vector<int> g (s,-1);
 
- vector<int> nextGreaterElement(const vector<int>& nums){
-     int n = nums.size();
-     vector<int> result (n,-1);
+    stack<int> st;
 
-     stack<int> stk;
+    for(int i=0; i<s; i++){
 
-     for(int i=0; i<n; ++i){
-         while(!stk.empty() && nums[i] > nums[stk.top()]){
-             int idx = stk.top();
-             stk.pop();
-             result[idx] = nums[i];
-         }
-         stk.push(i);
-     }
-    return result;
+        while(!st.empty() && n[i] > n[st.top()]){
+            int idx = st.top();
+            st.pop();
+        }
+        st.push(i);
+    }
 
- }
+    return g;
+}
 
 int main(){
     vector<int> nums = {2, 1, 2, 4, 3};
     vector<int> result = nextGreaterElement(nums);
 
     cout << "Next Greater Elements:\n";
-        for (int i = 0; i < nums.size(); ++i) {
-                    cout << nums[i] << " --> " << result[i] << endl;
-                        }
-        
-
+    for(auto x:result) cout<<x;
+    cout<<endl;
     return 0;
 }
