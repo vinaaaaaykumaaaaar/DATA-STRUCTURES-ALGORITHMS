@@ -49,31 +49,30 @@ Approaches:
 
 using namespace std;
 
-std::string longestCommonPrefix(std::vector<std::string> &strs)
+std::string longestCommonPrefix(std::vector<std::string> &s)
 {
-    if (strs.empty())
+ 
+    if (s.empty())
     {
         return ""; // Handle empty input array
     }
 
-    // Iterate through the characters of the first string
-    for (int i = 0; i < strs[0].length(); ++i)
-    {
-        char currentChar = strs[0][i];
+    string ans = "";
 
-        // Compare the current character with the corresponding character in other strings
-        for (int j = 1; j < strs.size(); ++j)
+    for(int i=0 ; i<s[0].length(); i++)
+    {
+        char c = s[0][i];
+        for(int j=1 ; j<s.size(); j++)
         {
-            // If a mismatch is found or a string is shorter, return the common prefix found so far
-            if (i >= strs[j].length() || strs[j][i] != currentChar)
+            if(s[j][i] != c || i>s[j].length())
             {
-                return strs[0].substr(0, i);
+                return s[0].substr(0,i);
             }
+            
         }
     }
-
     // If the entire first string is a common prefix, return it
-    return strs[0];
+    return s[0];
 }
 
 int main()
