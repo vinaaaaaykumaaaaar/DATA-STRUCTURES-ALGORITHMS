@@ -185,8 +185,8 @@ step 11: Learn linked-list ( singly linked-list , doubly linked-list, easy -> me
 
 step 12: Recursion (pattern-wise)
     a) get a strong hold
-        [] recursion implementation of atoi()
-        [] pow(x,n)
+        [X] recursion implementation of atoi()
+        [X] pow(x,n)
         [] count good numbers
         [] sort a stack using recursion
         [] reverse a stack using recursion
