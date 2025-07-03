@@ -10,6 +10,7 @@
  * It considers acceleration, coasting, and deceleration phases and provides the spacecraft's
  * position and velocity at each time step.
  */
+
 class Spacecraft
 {
 public:
