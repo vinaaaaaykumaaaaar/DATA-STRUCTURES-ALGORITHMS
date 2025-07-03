@@ -14,10 +14,10 @@ step 3: Learn standard template library for C++
 step 4: Know Basic Math
     -[X] reverse a number
     -[X] check palindrome
-    -[] GCD or HCF
-    -[] armstrong numbers
-    -[] print all divisors
-    -[] check prime numbers
+    -[X] GCD or HCF
+    -[X] armstrong numbers
+    -[X] print all divisors
+    -[X] check prime numbers
 
 step 5: Learn basic recursion
     -[X] understand recursion by printing something N times
@@ -66,7 +66,7 @@ step 8: Solve problems on arrays (easy -> medium -> hard)
         -[X] 2sum problem
         -[] sort an array of 0's , 1's and 2's
         -[] majority element (>n/2 times)
-        -[] kadane's algorithm , maximum subarray sum 
+        -[] kadane's algorithm , maximum subarray sum
         -[] print subarray with maximum subarray sum(extended version of above problem)
         -[] stock buy and sell
         -[] rearrange the array elements in positive and negative items
@@ -203,7 +203,7 @@ step 12: Recursion (pattern-wise)
         [] subset sum-3
         [] combination sum-3
         [] letter combination of a phone number
-    c) tring out all combos / hard
+    c) string out all combos / hard
         [] palindrome partitioning
         [] word search
         [] N queens
