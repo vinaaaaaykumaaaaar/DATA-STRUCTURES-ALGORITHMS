@@ -238,12 +238,12 @@ step 13: Bit manipulation (concepts and problems)
 
 step 14: Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
     a) learning
-        [] implementing stacks using arrays
-        [] implementing queues using arrays
-        [] implementing stacks using queues
-        [] implementing queues using stacks
-        [] implementing stacks using linked-list
-        [] implementing queues using linked-list
+        [X] implementing stacks using arrays
+        [X] implementing queues using arrays
+        [X] implementing stacks using queues
+        [X] implementing queues using stacks
+        [X] implementing stacks using linked-list
+        [X] implementing queues using linked-list
         [] check for balanced parenthesis
         [] implementing min stack
     b) prefix , postfix , infix conversion problems
