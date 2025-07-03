@@ -130,12 +130,12 @@ step 9: Binary search on 1D , 2D array and search space
 
 step 10: Strings (Basics and Medium)
     a) basic and easy string problems
-        [] remove outermost parenthesis
-        [] reverse words / palindrome check
-        [] largest odd number in a string
-        [] largest common prefix
-        [] isomorphic string
-        [] check whether one string is rotation of another
+        [X] remove outermost parenthesis
+        [X] reverse words / palindrome check
+        [X] largest odd number in a string
+        [X] largest common prefix
+        [X] isomorphic string
+        [X] check whether one string is rotation of another
         [X] check if two strings are anagram of each other
     b) medium string problems
         [] sort character by frequency
