@@ -102,7 +102,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
     [] - 2 Sum - Distinct Pairs
     [] - 3 Sum - Find Any
     [] - 3 Sum - Closest Triple
-    [] - 4 Sum - Find Any [More problems on 4 Sum in Hard Section
+    [] - 4 Sum - Find Many More problems on 4 Sum in Hard Section
 
 
   - Hard Problems on Array
