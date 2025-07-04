@@ -1,0 +1,81 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX      B I N A R Y  -  T R E E S       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+A BINARY TREE is a hierarchical data structure in which each node has at most 2 children,
+commonly referred to as the left and right child. It is used in many applications such as
+expression parsing , search trees (BST) heaps and more.
+
+NODE DEFINATION :
+
+    class Node 
+    {
+        public : 
+            int data;
+            Node* leftChild;
+            Node* rightChild;
+
+            Node (int value) : data(value) , leftChild(nullptr) , rightChild(nullptr) {}
+    };
+
+    - data       : holds the value 
+    - leftChild  : pointer to the left subtree
+    - rightChild : pointer to the right subtree 
+
+TREE TRAVERSALS :
+
+    Traversal is a process of visiting all nodes in a specific order.
+    
+    TYPES : 
+        - depth first traversal (DFS) 
+        - breadth first traversal (BFS)
+
+DEPTH FIRST TRAVERSALS :
+    
+    Traversal method to visit all the nodes with depth as priority
+
+    TYPES :
+        - Preorder traversal  (root , left , right)
+        - Inorder traversal   (left , root , right)
+        - Postorder traversal (left , right , root)
+
+PREORDER TRAVERSAL :
+
+    // process current node , then left and then right
+    void preorder ( Node* root )
+    {
+        if ( root == nullptr ) return;
+
+        std::cout<<root->data<<" ";
+        preorder ( root->left );
+        preorder ( root->right );
+    }
+
+INORDER TRAVERSAL :
+
+    // process left node , then root and then right
+    void inorder ( Node* root )
+    {
+        if ( root == nullptr ) return;
+
+        inorder (root->left);
+        std::cout<<root->data<<" ";
+        inorder (root->right);
+
+    }
+
+POSTORDER TRAVERSAL :
+
+    // process right node , then left and then root
+    void postorder ( Node* root )
+    {
+        if ( root == nullptr ) return;
+
+        postorder (root->right);
+        postorder (root->left);
+        std::cout<<root->data<<" ";
+    }
+
+COMPLEXITY :
+
+    - Time Complexity  : O(n) -> each node is visited once
+    - Space Complexity : O(h) -> due to recursion stack , where h is the height of the tree (worst case n , balanced case logn)
+
