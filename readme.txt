@@ -338,11 +338,11 @@ step 18: Binary trees (traversals , medium and hard problem)
         -[X] inorder traversal of a binary tree
         -[X] postorder traversal of a binary tree
         -[X] level order traversal in a spiral form
-        -[] iterative preorder traversal of binary tree
-        -[] iterative inorder traversal of binary tree
+        -[X] iterative preorder traversal of binary tree
+        -[X] iterative inorder traversal of binary tree
         -[] post order traversal of binary tree using 2 stacks
         -[] post order traversal of binary tree using 1 stacks
-        - Preorder, Inorder, and Postorder Traversal in one Traversal
+        -[] Preorder, Inorder, and Postorder Traversal in one Traversal
     b) medium problems
         -[] height of a binary tree
         -[] check if the binary tree is height balanced or not
