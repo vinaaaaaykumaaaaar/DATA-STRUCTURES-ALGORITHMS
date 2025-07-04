@@ -45,8 +45,8 @@ PREORDER TRAVERSAL :
         if ( root == nullptr ) return;
 
         std::cout<<root->data<<" ";
-        preorder ( root->left );
-        preorder ( root->right );
+        preorder ( root->leftChild );
+        preorder ( root->rightChild );
     }
 
 INORDER TRAVERSAL :
@@ -56,21 +56,21 @@ INORDER TRAVERSAL :
     {
         if ( root == nullptr ) return;
 
-        inorder (root->left);
+        inorder (root->leftChild);
         std::cout<<root->data<<" ";
-        inorder (root->right);
+        inorder (root->rightChild);
 
     }
 
 POSTORDER TRAVERSAL :
 
-    // process right node , then left and then root
+    // process left node , then right and then root
     void postorder ( Node* root )
     {
         if ( root == nullptr ) return;
 
-        postorder (root->right);
-        postorder (root->left);
+        postorder (root->leftChild);
+        postorder (root->rightChild);
         std::cout<<root->data<<" ";
     }
 
