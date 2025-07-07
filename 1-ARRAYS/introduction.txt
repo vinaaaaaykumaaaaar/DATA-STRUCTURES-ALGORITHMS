@@ -29,20 +29,20 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
 
    - Basic Problems
 	
-     [] - Print Alternates
-     [] - Linear Search
-     [] - Largest Element
-     [] - Second Largest
-     [] - Largest Three
-     [] - Leaders in an array
-     [] - Check if Sorted
-     [] - Remove Duplicates from Sorted
-     [] - Generate all Subarrays
-     [] - Reverse an Array
-     [] - Rotate an Array
-     [] - Zeroes to End
-     [] - Min Increments to Make Equal
-     [] - Min Cost to Make Size 1
+     [X] - Print Alternates
+     [X] - Linear Search
+     [X] - Largest Element
+     [X] - Second Largest
+     [X] - Largest Three
+     [X] - Leaders in an array
+     [X] - Check if Sorted
+     [X] - Remove Duplicates from Sorted
+     [X] - Generate all Subarrays
+     [X] - Reverse an Array
+     [X] - Rotate an Array
+     [X] - Zeroes to End
+     [X] - Min Increments to Make Equal
+     [X] - Min Cost to Make Size 1
 
    - Easy Problems on Array
 
