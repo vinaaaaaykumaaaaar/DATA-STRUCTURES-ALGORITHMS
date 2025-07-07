@@ -1,0 +1,37 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX          G R A P H S          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+DEFINATION :
+    Graphs are a powerful non linear data structure used in cs to represent 
+    relationships between objects. They consist of two main componenst
+
+    - vertices (Nodes) : these are the individual elements or entities that 
+                         are represented in graph.
+    - Edges (Links)    : these are the connections between pairs of vertices
+
+FORMAL DEFINITION :
+    A graph can be formally defined as G = (V, E) where :
+
+    - V is a set of vertices.
+    - E is a set of edges 
+
+TYPES :
+    Graphs are two types :
+    - Directed : given direction from - to 
+    - Undirected : not given direction 
+
+IMPLEMENTATION :
+
+    - ADJACENCY MATRIX :
+
+        Concept:
+            The adjacency matrix uses a square matrix, where rows and columns 
+            represent vertices. In the matrix, adj[i][j] equals 1 if there's 
+            an edge from node i to node j, and 0 if there isn't. For weighted 
+            graphs, the cell contains the edge weight. 
+
+    - ADJACENCY LIST :
+
+        Concept :
+            This method uses an array of lists where each vertex has a list of 
+            its neighboring nodes.
+    
