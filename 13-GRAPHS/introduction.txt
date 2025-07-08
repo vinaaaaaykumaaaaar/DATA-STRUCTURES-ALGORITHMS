@@ -14,6 +14,11 @@ FORMAL DEFINITION :
     - V is a set of vertices.
     - E is a set of edges 
 
+DEGREE : 
+    - for an undirected graph -> the no of edges that is attached to node 
+    property = 2(E)
+    
+
 TYPES :
     Graphs are two types :
     - Directed : given direction from - to 

@@ -396,9 +396,9 @@ step 20: Graphs(concepts and problems)
     a) learning
         -[X] graph and types
         -[X] graph representation in C++
-        -[] connected components / logical explaination
-        -[] breadth first search
-        -[] deapth first search
+        -[X] connected components / logical explaination
+        -[X] breadth first search
+        -[X] deapth first search
     b) problems on bfs and dfs
         -[] number of provinces
         -[] connected components in a matrix

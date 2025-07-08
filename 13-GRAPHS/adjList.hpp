@@ -19,7 +19,7 @@ public:
     // Add an undirected edge between u and v
     void addEdge(int u, int v)
     {
-        if (u >= 0 && u < numVertices && v >= 0 && v < numVertices)
+        if (u > 0 && u <= numVertices && v > 0 && v <= numVertices)
         {
             adjList[u].push_back(v); // Add v to u's list
             adjList[v].push_back(u); // Add u to v's list (for undirected graph)
@@ -45,17 +45,3 @@ public:
         }
     }
 };
-
-int main()
-{
-    AdjacencyListGraph g(5); // Graph with 5 vertices
-    g.addEdge(0, 1);
-    g.addEdge(0, 4);
-    g.addEdge(1, 2);
-    g.addEdge(1, 3);
-    g.addEdge(1, 4);
-    g.addEdge(2, 3);
-    g.addEdge(3, 4);
-    g.display(); //
-    return 0;
-}
