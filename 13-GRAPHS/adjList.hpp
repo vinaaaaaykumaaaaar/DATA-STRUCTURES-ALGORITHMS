@@ -19,7 +19,7 @@ public:
     // Add an undirected edge between u and v
     void addEdge(int u, int v)
     {
-        if (u > 0 && u <= numVertices && v > 0 && v <= numVertices)
+        if (u >= 0 && u < numVertices && v >= 0 && v < numVertices)
         {
             adjList[u].push_back(v); // Add v to u's list
             adjList[v].push_back(u); // Add u to v's list (for undirected graph)
