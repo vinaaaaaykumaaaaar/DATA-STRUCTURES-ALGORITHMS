@@ -1,0 +1,16 @@
+Dynamic programming involves breaking down a problem into subproblems 
+and getting results for those sub problems so that they can be reused 
+to use the results to solve for main problem
+
+-types
+ 1) top-down / memoization 
+ 2) bottom up / tabulation
+
+
+ differnce 
+
+ bottom up 
+    code is less complicated
+    unnecessary table entires
+    speed
+
