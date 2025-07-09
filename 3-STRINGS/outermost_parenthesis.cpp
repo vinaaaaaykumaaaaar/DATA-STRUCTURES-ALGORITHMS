@@ -5,7 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-
 /**
 Problem Statement:
 
@@ -22,19 +21,13 @@ Example:
     Remove Outermost Parentheses: ()() + ()
     Output: ()()()
 
- */
-
-
-
- /*
-
 Approaches:
 
 
-Brute Force (Conceptual): 
-    A conceptual approach would involve identifying all primitive strings, 
+Brute Force (Conceptual):
+    A conceptual approach would involve identifying all primitive strings,
     removing their outer parentheses, and concatenating the results. However
-    , this is complex and inefficient due to the difficulty in accurately 
+    , this is complex and inefficient due to the difficulty in accurately
     identifying primitive string boundaries.
 
 Better Approach (Using a Stack):
@@ -43,53 +36,49 @@ Better Approach (Using a Stack):
     is not empty. For ')', pop from the stack and append it to the result if
     the stack is not empty.
 
-Optimal Approach (Using a Counter): 
+Optimal Approach (Using a Counter):
     The most efficient approach uses a counter to track nesting depth.
- 
+
  */
 
+#include <iostream>
+#include <stack>
+#include <string>
 
- #include<iostream>
- #include<stack>
- #include<string>
- 
+using namespace std;
 
- using namespace std;
+std::string removeOuterParentheses(std::string s)
+{
+    std::string ans = ""; // String to store the result
+    int depth = 0;        // Counter to track the nesting depth
 
-
-std::string removeOuterParentheses(std::string s) {
-        std::string ans = ""; // String to store the result
-        int depth = 0; // Counter to track the nesting depth
-
-        for(auto c : s){
-            if(c == '('){
-                if(depth > 0){
-                    ans += c;
-                }
-                depth++;
-            }else if(c == ')'){
-                depth--;
-                if(depth>0){
-                    ans += c;
-                }
+    for (auto c : s)
+    {
+        if (c == '(')
+        {
+            if (depth > 0)
+            {
+                ans += c;
+            }
+            depth++;
+        }
+        else if (c == ')')
+        {
+            depth--;
+            if (depth > 0)
+            {
+                ans += c;
             }
         }
+    }
 
-        return ans;
+    return ans;
 }
-
 
 int main()
 {
     std::string s = "(()())(())";
-    cout<<removeOuterParentheses(s)<<endl;
+    cout << removeOuterParentheses(s) << endl;
 
     return 0;
-    
 }
-
-
-
-
-    
-
