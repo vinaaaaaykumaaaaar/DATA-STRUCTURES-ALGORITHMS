@@ -454,9 +454,9 @@ step 20: Graphs(concepts and problems)
 
 step 21: Dynamic Programming [patterns and problems]
     a) introduction to DP
-        -[] dynamic program introduction
+        -[X] dynamic program introduction
     b) one dimenstional DP
-        -[] climbing stars 
+        -[X] climbing stairs 
         -[] Frog Jump(DP-3)
         -[] Frog Jump with k distances(DP-4)
         -[] Maximum sum of non-adjacent elements (DP 5)
