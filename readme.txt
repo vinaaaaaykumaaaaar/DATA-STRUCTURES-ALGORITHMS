@@ -94,9 +94,9 @@ step 8: Solve problems on arrays (easy -> medium -> hard)
 step 9: Binary search on 1D , 2D array and search space
     a) binary search on 1D array
         -[X] binary search to find x in sorted array
-        -[] implement lower bound
-        -[] implement upper bound
-        -[] search insert position
+        -[X] implement lower bound
+        -[X] implement upper bound
+        -[X] search insert position
         -[] floor/ceil in sorted array
         -[] find the first or last occurances of a given number in a sorted array
         -[] find the occurances of a number in the sorted array with the duplicates
@@ -238,14 +238,14 @@ step 13: Bit manipulation (concepts and problems)
 
 step 14: Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
     a) learning
-        [] implementing stacks using arrays
-        [] implementing queues using arrays
-        [] implementing stacks using queues
-        [] implementing queues using stacks
-        [] implementing stacks using linked-list
-        [] implementing queues using linked-list
-        [] check for balanced parenthesis
-        [] implementing min stack
+        [X] implementing stacks using arrays
+        [X] implementing queues using arrays
+        [X] implementing stacks using queues
+        [X] implementing queues using stacks
+        [X] implementing stacks using linked-list
+        [X] implementing queues using linked-list
+        [X] check for balanced parenthesis
+        [X] implementing min stack
     b) prefix , postfix , infix conversion problems
         [X] infix to postfix conversion using stacks
         [X] prefix to infix conversion
@@ -312,17 +312,17 @@ step 16: Heaps (learing medium and hard problems)
 
 step 17: Greedy algorithms (easy , medium and hard)
     a) easy problems
-        -[] assign cookies
-        -[] fractional knapsack problem
+        -[X] assign cookies
+        -[X] fractional knapsack problem
         -[] greedy algorithm to find the minimum number of coins
-        -[] lemonade change
+        -[X] lemonade change
         -[] valid parenthesis checker
     b) medium / hard
         -[] N meetings in one room
-        -[] jump game
+        -[X] jump game
         -[] jump game 2
         -[] minimum number of platforms required for a railway
-        -[] job sequencing problem
+        -[X] job sequencing problem
         -[] candy
         -[] problem for shortest job first CPU scheduling
         -[] insert interval
