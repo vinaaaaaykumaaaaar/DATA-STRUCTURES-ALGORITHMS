@@ -10,10 +10,13 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        B I T   M A N I P U L A T I O N        X
 
 2) Why Learn Bit Manipulation?
 
-- **Efficiency**: Bitwise operations are extremely fast (O(1)), as they are directly supported by the CPU.
-- **Memory Optimization**: You can pack multiple boolean values or small numbers into a single integer, saving space.
-- **Elegant Solutions**: Many problems that seem complex can be solved elegantly with bit tricks.
-- **Competitive Programming**: Many DSA and coding round problems require bit manipulation for optimal solutions.
+- **Efficiency**              : Bitwise operations are extremely fast (O(1)), as they are directly
+                                supported by the CPU.
+- **Memory Optimization**     : You can pack multiple boolean values or small numbers into a single
+                                integer, saving space.
+- **Elegant Solutions**       : Many problems that seem complex can be solved elegantly with bit tricks.
+- **Competitive Programming** : Many DSA and coding round problems require bit manipulation for optimal
+                                solutions.
 
 3) When to Use Bit Manipulation?
 
@@ -24,11 +27,11 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        B I T   M A N I P U L A T I O N        X
 
 4) Bitwise Operators in C++
 
-- `&`  (AND) : Sets each bit to 1 if both bits are 1.
-- `|`  (OR)  : Sets each bit to 1 if one of two bits is 1.
-- `^`  (XOR) : Sets each bit to 1 if only one of two bits is 1.
-- `~`  (NOT) : Inverts all the bits.
-- `<<` (Left Shift): Shifts bits to the left, adding zeros on the right.
+- `&`  (AND)        : Sets each bit to 1 if both bits are 1.
+- `|`  (OR)         : Sets each bit to 1 if one of two bits is 1.
+- `^`  (XOR)        : Sets each bit to 1 if only one of two bits is 1.
+- `~`  (NOT)        : Inverts all the bits.
+- `<<` (Left Shift) : Shifts bits to the left, adding zeros on the right.
 - `>>` (Right Shift): Shifts bits to the right, discarding bits on the right.
 
 5) Common Bit Manipulation Techniques
