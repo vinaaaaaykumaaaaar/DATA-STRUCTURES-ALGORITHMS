@@ -215,7 +215,7 @@ step 12: Recursion (pattern-wise)
 
 step 13: Bit manipulation (concepts and problems)
     a) learn bit manipulation
-        [] introduction to bit manipulation(theory)
+        [X] introduction to bit manipulation(theory)
         [] check if the ith bit is set or not
         [] check if a number is odd or not
         [] check if a number is power of 2 or not
