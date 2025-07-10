@@ -1,51 +1,56 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-using namespace std;
 
-int stringToDigits(string number)
+// Converts a decimal string to an integer using std::stoi
+int stringToDigits(const std::string &number)
 {
-    int res = 0;
-
-    for (int i = 0; i < number.size(); i++)
+    try
     {
-        int currentDigit = 0;
-        currentDigit = number[i] - '0';
-
-        res = res * 10 + currentDigit;
+        return std::stoi(number);
     }
-
-    return res;
+    catch (const std::invalid_argument &)
+    {
+        std::cerr << "Invalid input: not a number." << std::endl;
+        return 0;
+    }
+    catch (const std::out_of_range &)
+    {
+        std::cerr << "Input number is out of range." << std::endl;
+        return 0;
+    }
 }
 
-string decimalToBinary(int number)
+// Converts an integer to its binary string representation
+std::string decimalToBinary(int number)
 {
-    string res = "";
-
-    while (number != 1)
+    if (number == 0)
+        return "0";
+    std::string res;
+    while (number > 0)
     {
-        if (number % 2 == 1)
-            res += '1';
-        else
-            res += '0';
-        number = number / 2;
+        res += (number % 2) ? '1' : '0';
+        number /= 2;
     }
-
-    reverse(res.begin(), res.end());
+    std::reverse(res.begin(), res.end());
     return res;
 }
 
 int main()
 {
-    string number = "121";
+    std::string number;
+    std::cout << "Enter a decimal number: ";
+    std::cin >> number;
 
     int convertedNumber = stringToDigits(number);
+    if (convertedNumber == 0 && number != "0")
+    {
+        // Error already printed in stringToDigits
+        return 1;
+    }
 
-    string binaryNumber = decimalToBinary(convertedNumber);
-
-    int boolean = stringToDigits(binaryNumber);
-
-    cout << "Boolean format of " << number << " is " << boolean << endl;
+    std::string binaryNumber = decimalToBinary(convertedNumber);
+    std::cout << "Binary format of " << number << " is " << binaryNumber << std::endl;
 
     return 0;
 }
