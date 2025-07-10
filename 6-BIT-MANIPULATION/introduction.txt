@@ -2,8 +2,11 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        B I T   M A N I P U L A T I O N        X
 
 1) What is Bit Manipulation?
 
-- Bit manipulation refers to the act of algorithmically manipulating bits or binary digits (0 and 1) that make up integers in computer memory. It involves using bitwise operators to perform operations directly on the binary representations of numbers.
-- Computers store all data in binary, so bit manipulation allows us to work at the lowest level of data representation, often leading to highly efficient solutions.
+- Bit manipulation refers to the act of algorithmically manipulating bits or binary digits (0 and 1)
+  that make up integers in computer memory. It involves using bitwise operators to perform operations
+  directly on the binary representations of numbers.
+- Computers store all data in binary, so bit manipulation allows us to work at the lowest level of 
+  data representation, often leading to highly efficient solutions.
 
 2) Why Learn Bit Manipulation?
 
@@ -21,10 +24,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        B I T   M A N I P U L A T I O N        X
 
 4) Bitwise Operators in C++
 
-- `&` (AND): Sets each bit to 1 if both bits are 1.
-- `|` (OR): Sets each bit to 1 if one of two bits is 1.
-- `^` (XOR): Sets each bit to 1 if only one of two bits is 1.
-- `~` (NOT): Inverts all the bits.
+- `&`  (AND) : Sets each bit to 1 if both bits are 1.
+- `|`  (OR)  : Sets each bit to 1 if one of two bits is 1.
+- `^`  (XOR) : Sets each bit to 1 if only one of two bits is 1.
+- `~`  (NOT) : Inverts all the bits.
 - `<<` (Left Shift): Shifts bits to the left, adding zeros on the right.
 - `>>` (Right Shift): Shifts bits to the right, discarding bits on the right.
 
