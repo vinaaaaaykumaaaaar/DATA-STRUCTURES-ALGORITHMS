@@ -216,12 +216,12 @@ step 12: Recursion (pattern-wise)
 step 13: Bit manipulation (concepts and problems)
     a) learn bit manipulation
         [X] introduction to bit manipulation(theory)
-        [] check if the ith bit is set or not
-        [] check if a number is odd or not
-        [] check if a number is power of 2 or not
+        [X] check if the ith bit is set or not
+        [X] check if a number is odd or not
+        [X] check if a number is power of 2 or not
         [] count of the number of set bits
-        [] set / unset the rightmost unset bit
-        [] swap two numbers
+        [X] set / unset the rightmost unset bit
+        [X] swap two numbers
         [] divide two numbers without using multiplication , division or mod operator
     b) interview problems
         [] count the number of bits to be flipped to convert from A to B
