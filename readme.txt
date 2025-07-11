@@ -374,9 +374,9 @@ step 18: Binary trees (traversals , medium and hard problem)
     
 step 19: Binary search tree (concepts and problems)
     a) concepts
-        -[] introduction to binary search tree
-        -[] search in a binary search tree
-        -[] find min/max in a BST
+        -[X] introduction to binary search tree
+        -[X] search in a binary search tree
+        -[X] find min/max in a BST
     b) practice problems
         -[] ceil in a binary search tree
         -[] floor in a binary search tree
