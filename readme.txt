@@ -1,24 +1,3 @@
-step 1: Learn the basics
-    -[X] C++ Basics
-    -[X] Time Complexity(Learn basics and then learn the next steps)
-
-step 2: Build up logical thinking
-    -[X] patterns
-
-step 3: Learn standard template library for C++
-     C++ STL
-        -[X] vectors
-        -[X] maps
-        -[X] sets 
-        
-step 4: Know Basic Math
-    -[X] reverse a number
-    -[X] check palindrome
-    -[X] GCD or HCF
-    -[X] armstrong numbers
-    -[X] print all divisors
-    -[X] check prime numbers
-
 step 5: Learn basic recursion
     -[X] understand recursion by printing something N times
     -[X] print name N times using recursion
@@ -29,11 +8,6 @@ step 5: Learn basic recursion
     -[X] reverse an array
     -[X] check if a string is palindrome or not
     -[X] fibonacci number
-
-step 6: Learn basic Hashing
-    -[X] hashing theory
-    -[X] counting frequency of array elements
-    -[X] finding highest/lowest frequency elements
 
 step 7: Learn important sorting techniques
     a) sorting - 1
@@ -275,7 +249,7 @@ step 14: Stacks and Queues(learn pre-in post-fix, monotonic stack , implementati
 step 15: Slinding window and two pointer combined problems
     a) medium problems
         -[X] longest substring without repeating characters
-        -[] maximum consecutive ones 3
+        -[X] maximum consecutive ones 3
         -[X] fruit into baskets
         -[X] longest repeating character replacement
         -[X] binary subarray with sum
@@ -340,9 +314,9 @@ step 18: Binary trees (traversals , medium and hard problem)
         -[X] level order traversal in a spiral form
         -[X] iterative preorder traversal of binary tree
         -[X] iterative inorder traversal of binary tree
-        -[] post order traversal of binary tree using 2 stacks
-        -[] post order traversal of binary tree using 1 stacks
-        -[] Preorder, Inorder, and Postorder Traversal in one Traversal
+        -[X] post order traversal of binary tree using 2 stacks
+        -[X] post order traversal of binary tree using 1 stacks
+        -[X] Preorder, Inorder, and Postorder Traversal in one Traversal
     b) medium problems
         -[] height of a binary tree
         -[] check if the binary tree is height balanced or not
