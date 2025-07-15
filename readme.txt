@@ -1,4 +1,4 @@
-step 5: Learn basic recursion
+1): Learn basic recursion
     -[X] understand recursion by printing something N times
     -[X] print name N times using recursion
     -[X] print 1 to N using recursion
@@ -9,7 +9,7 @@ step 5: Learn basic recursion
     -[X] check if a string is palindrome or not
     -[X] fibonacci number
 
-step 7: Learn important sorting techniques
+2): Learn important sorting techniques
     a) sorting - 1
         -[X] selection sort
         -[] bubble sort
@@ -20,7 +20,7 @@ step 7: Learn important sorting techniques
         -[] recursive insertion sort
         -[] quick sort
 
-step 8: Solve problems on arrays (easy -> medium -> hard)
+3): Solve problems on arrays (easy -> medium -> hard)
     a) Easy
         -[X] largest element in an array
         -[X] second largest element in an array without sorting 
@@ -65,7 +65,7 @@ step 8: Solve problems on arrays (easy -> medium -> hard)
         -[] reverse pairs
         -[] maximum product subarrays
 
-step 9: Binary search on 1D , 2D array and search space
+4): Binary search on 1D , 2D array and search space
     a) binary search on 1D array
         -[X] binary search to find x in sorted array
         -[X] implement lower bound
@@ -102,7 +102,7 @@ step 9: Binary search on 1D , 2D array and search space
         -[] find peek element(2D array)
         -[] matrix median
 
-step 10: Strings (Basics and Medium)
+5): Strings (Basics and Medium)
     a) basic and easy string problems
         [X] remove outermost parenthesis
         [X] reverse words / palindrome check
@@ -120,7 +120,7 @@ step 10: Strings (Basics and Medium)
         [] longest palindrome substring(without using DP)
         [] sum of beauty of all substring
 
-step 11: Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
+6): Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
     a) learn singly linked-list
         [X] introduction to linked-list learn about struct and how the node is represented
         [X] inserting a node in linked-list
@@ -157,7 +157,7 @@ step 11: Learn linked-list ( singly linked-list , doubly linked-list, easy -> me
         [] flattering a linked-list
         [] clone a linked-list with random and next pointer
 
-step 12: Recursion (pattern-wise)
+7): Recursion (pattern-wise)
     a) get a strong hold
         [X] recursion implementation of atoi()
         [X] pow(x,n)
@@ -187,7 +187,7 @@ step 12: Recursion (pattern-wise)
         [] Sudoko solver
         [] expression add operators
 
-step 13: Bit manipulation (concepts and problems)
+8): Bit manipulation (concepts and problems)
     a) learn bit manipulation
         [X] introduction to bit manipulation(theory)
         [X] check if the ith bit is set or not
@@ -210,7 +210,7 @@ step 13: Bit manipulation (concepts and problems)
         [] find prime factorization of a number using sieve
         [] power(n,x)
 
-step 14: Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
+9): Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
     a) learning
         [X] implementing stacks using arrays
         [X] implementing queues using arrays
@@ -246,7 +246,7 @@ step 14: Stacks and Queues(learn pre-in post-fix, monotonic stack , implementati
         [] LRU cache (important)
         [] LRU cache
     
-step 15: Slinding window and two pointer combined problems
+10): Slinding window and two pointer combined problems
     a) medium problems
         -[X] longest substring without repeating characters
         -[X] maximum consecutive ones 3
@@ -262,7 +262,7 @@ step 15: Slinding window and two pointer combined problems
         -[X] minimum window substring
         -[X] minimum window subsequence
     
-step 16: Heaps (learing medium and hard problems)
+11): Heaps (learing medium and hard problems)
     a) learning
         -[] introduction to priority queues using binary heaps
         -[] min and max heap implementation
@@ -284,7 +284,7 @@ step 16: Heaps (learing medium and hard problems)
         -[] find median from data stream
         -[] K most frequent elements
 
-step 17: Greedy algorithms (easy , medium and hard)
+12): Greedy algorithms (easy , medium and hard)
     a) easy problems
         -[X] assign cookies
         -[X] fractional knapsack problem
@@ -303,7 +303,7 @@ step 17: Greedy algorithms (easy , medium and hard)
         -[] merge interval
         -[] non overlapping intervals
 
-step 18: Binary trees (traversals , medium and hard problem)
+14): Binary trees (traversals , medium and hard problem)
     a) traversals
         -[X] introduction to trees
         -[X] binary tree representation in C++
@@ -346,7 +346,7 @@ step 18: Binary trees (traversals , medium and hard problem)
         -[] Morris inorder traversal of a binary tree
         -[] flatten binary tree to linked-list
     
-step 19: Binary search tree (concepts and problems)
+15): Binary search tree (concepts and problems)
     a) concepts
         -[X] introduction to binary search tree
         -[X] search in a binary search tree
@@ -366,7 +366,7 @@ step 19: Binary search tree (concepts and problems)
         -[] recover BST / correct two nodes with BST swapped
         -[] largest BST in binary tree
 
-step 20: Graphs(concepts and problems)
+16): Graphs(concepts and problems)
     a) learning
         -[X] graph and types
         -[X] graph representation in C++
@@ -426,7 +426,7 @@ step 20: Graphs(concepts and problems)
         -[] Articulation Point
         -[] Kosaraju's Algorithm
 
-step 21: Dynamic Programming [patterns and problems]
+17): Dynamic Programming [patterns and problems]
     a) introduction to DP
         -[X] dynamic program introduction
     b) one dimenstional DP
@@ -493,7 +493,7 @@ step 21: Dynamic Programming [patterns and problems]
         -[] Maximum Rectangle Area with all 1's|(DP-55)
         -[] Count Square Submatrices with All Ones|(DP-56)
 
-step 21: Tries 
+18): Tries 
     a) theory
         -[] Implement TRIE | INSERT | SEARCH | STARTSWITH
     b) problems
@@ -504,7 +504,7 @@ step 21: Tries
         -[] Maximum XOR of two numbers in an array
         -[] Maximum XOR With an Element From Array
 
-step 22: Strings
+19): Strings
     a) Hard Problems
         -[] Minimum number of bracket reversals needed to make an expression balanced
         -[] Count and say
