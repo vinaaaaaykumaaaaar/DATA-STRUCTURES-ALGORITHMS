@@ -9,17 +9,6 @@
     -[X] check if a string is palindrome or not
     -[X] fibonacci number
 
-2): Learn important sorting techniques
-    a) sorting - 1
-        -[X] selection sort
-        -[] bubble sort
-        -[] insertion sort
-    b) sorting - 2
-        -[] merge sort
-        -[] recursive bubble sort
-        -[] recursive insertion sort
-        -[] quick sort
-
 3): Solve problems on arrays (easy -> medium -> hard)
     a) Easy
         -[X] largest element in an array
@@ -54,7 +43,7 @@
     c) Hard
         -[] pascal's triangle
         -[] majority elements(>n/3 times)
-        -[] 3 sum problem
+        -[X] 3 sum problem
         -[] 4 sum problem
         -[] largest subarray with 0 sum
         -[] count number of subarray with given xor K
@@ -218,17 +207,17 @@
         [X] implementing queues using stacks
         [X] implementing stacks using linked-list
         [X] implementing queues using linked-list
-        [X] check for balanced parenthesis
-        [X] implementing min stack
+        [] check for balanced parenthesis
+        [] implementing min stack
     b) prefix , postfix , infix conversion problems
-        [X] infix to postfix conversion using stacks
-        [X] prefix to infix conversion
-        [X] prefix to postfix conversion
-        [X] postfix to prefix conversion
-        [X] postfix to infix conversion
-        [X] convert infix to prefix notation
+        [] infix to postfix conversion using stacks
+        [] prefix to infix conversion
+        [] prefix to postfix conversion
+        [] postfix to prefix conversion
+        [] postfix to infix conversion
+        [] convert infix to prefix notation
     c) Monotonic stacks / queues problems(very very very important )
-        [X] next greater element
+        [] next greater element
         [] next greater element 2
         [] next smaller element
         [] number of NGE's to right
