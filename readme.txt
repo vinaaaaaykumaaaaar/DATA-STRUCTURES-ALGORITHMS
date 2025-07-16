@@ -1,11 +1,9 @@
 1): Solve problems on arrays (easy -> medium -> hard)
     b) Medium 
-        -[] kadane's algorithm , maximum subarray sum
         -[] print subarray with maximum subarray sum(extended version of above problem)
         -[] stock buy and sell
         -[] rearrange the array elements in positive and negative items
         -[] next permutation
-        -[] leaders in array problems
         -[] longest consecutive sequence in the array
         -[] set matrix zero
         -[] rotate matrix by 90 degree
