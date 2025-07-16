@@ -17,8 +17,8 @@
  *  - Detailed comments and Doxygen-style documentation
  */
 
-#include <iostream>  // std::cout, std::endl
-#include <stdexcept> // std::runtime_error
+#include <iostream>
+#include <stdexcept>
 
 /**
  * @class LinkedList
@@ -28,6 +28,7 @@
  * allocated, singly linked structure. It exposes an easy-to-use API
  * for insertion, removal, search, and traversal.
  */
+
 class LinkedList
 {
 private:
@@ -37,22 +38,27 @@ private:
      */
     struct Node
     {
-        int data;   ///< Value stored in this node
-        Node *next; ///< Pointer to the next node (or nullptr if end)
+        int data;
+        Node *next;
 
-        /// Constructor for convenience
         Node(int value, Node *nextPtr = nullptr)
-            : data(value), next(nextPtr) {}
+        {
+            this->data = value;
+            this->next = nextPtr;
+        }
     };
 
     Node *head;   ///< Pointer to the first node in the list
     size_t count; ///< Number of elements in the list
 
 public:
-    /// Default constructor initializes an empty list
-    LinkedList() : head(nullptr), count(0) {}
+    LinkedList()
+    {
+        head = nullptr;
+        count = 0;
+    }
 
-    /// Destructor releases all allocated nodes
+    // Destructor releases all allocated nodes
     ~LinkedList()
     {
         clear();
@@ -72,20 +78,22 @@ public:
      * @brief Insert a new node with given value at the back.
      * @param value The integer to insert.
      */
+
     void insertAtBack(int value)
     {
-        if (!head)
+        if (head == nullptr)
         {
-            // If list is empty, front insertion is equivalent
             insertAtFront(value);
             return;
         }
-        // Traverse to last node
+
         Node *curr = head;
+
         while (curr->next != nullptr)
         {
             curr = curr->next;
         }
+
         curr->next = new Node(value);
         ++count;
     }
@@ -95,17 +103,15 @@ public:
      * @param value The integer to remove.
      * @return True if removal succeeded; false if value not found.
      */
+
     bool remove(int value)
     {
-        Node *curr = head;
-        Node *prev = nullptr;
-
-        while (curr != nullptr)
+        Node *curr = head, *prev = nullptr;
+        while (curr->next != nullptr)
         {
             if (curr->data == value)
             {
-                // Found node to delete
-                if (prev)
+                if (prev != nullptr)
                 {
                     prev->next = curr->next;
                 }
@@ -113,14 +119,17 @@ public:
                 {
                     head = curr->next;
                 }
+
                 delete curr;
                 --count;
+
                 return true;
             }
+
             prev = curr;
             curr = curr->next;
         }
-        return false; // value not found
+        return false;
     }
 
     /**
@@ -143,12 +152,17 @@ public:
     }
 
     /**
-     * @brief Print all values in the list to stdout.
-     *
-     * Format: [val1 -> val2 -> ... -> valN]
+     * @brief Get the number of elements currently in the list.
+     * @return Size of the list.
      */
-    void display() const
+    size_t size() const
     {
+        return count;
+    }
+
+    void display()
+    {
+
         std::cout << "[";
         Node *curr = head;
         while (curr != nullptr)
@@ -161,15 +175,6 @@ public:
             curr = curr->next;
         }
         std::cout << "]" << std::endl;
-    }
-
-    /**
-     * @brief Get the number of elements currently in the list.
-     * @return Size of the list.
-     */
-    size_t size() const
-    {
-        return count;
     }
 
     /**
