@@ -1,7 +1,5 @@
 1): Solve problems on arrays (easy -> medium -> hard)
     b) Medium 
-        -[] sort an array of 0's , 1's and 2's
-        -[] majority element (>n/2 times)
         -[] kadane's algorithm , maximum subarray sum
         -[] print subarray with maximum subarray sum(extended version of above problem)
         -[] stock buy and sell
