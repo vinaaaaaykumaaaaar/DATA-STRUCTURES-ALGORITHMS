@@ -1,15 +1,4 @@
-1): Learn basic recursion
-    -[X] understand recursion by printing something N times
-    -[X] print name N times using recursion
-    -[X] print 1 to N using recursion
-    -[X] print N to 1 using recursion
-    -[X] sum of first N numbers
-    -[X] factorial of N numbers
-    -[X] reverse an array
-    -[X] check if a string is palindrome or not
-    -[X] fibonacci number
-
-3): Solve problems on arrays (easy -> medium -> hard)
+1): Solve problems on arrays (easy -> medium -> hard)
     a) Easy
         -[X] largest element in an array
         -[X] second largest element in an array without sorting 
@@ -54,7 +43,7 @@
         -[] reverse pairs
         -[] maximum product subarrays
 
-4): Binary search on 1D , 2D array and search space
+2): Binary search on 1D , 2D array and search space
     a) binary search on 1D array
         -[X] binary search to find x in sorted array
         -[X] implement lower bound
@@ -91,7 +80,7 @@
         -[] find peek element(2D array)
         -[] matrix median
 
-5): Strings (Basics and Medium)
+3): Strings (Basics and Medium)
     a) basic and easy string problems
         [X] remove outermost parenthesis
         [X] reverse words / palindrome check
@@ -109,7 +98,7 @@
         [] longest palindrome substring(without using DP)
         [] sum of beauty of all substring
 
-6): Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
+4): Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
     a) learn singly linked-list
         [X] introduction to linked-list learn about struct and how the node is represented
         [X] inserting a node in linked-list
@@ -146,7 +135,7 @@
         [] flattering a linked-list
         [] clone a linked-list with random and next pointer
 
-7): Recursion (pattern-wise)
+5): Recursion (pattern-wise)
     a) get a strong hold
         [X] recursion implementation of atoi()
         [X] pow(x,n)
@@ -176,7 +165,7 @@
         [] Sudoko solver
         [] expression add operators
 
-8): Bit manipulation (concepts and problems)
+6): Bit manipulation (concepts and problems)
     a) learn bit manipulation
         [X] introduction to bit manipulation(theory)
         [X] check if the ith bit is set or not
@@ -199,7 +188,7 @@
         [] find prime factorization of a number using sieve
         [] power(n,x)
 
-9): Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
+7): Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
     a) learning
         [X] implementing stacks using arrays
         [X] implementing queues using arrays
@@ -235,7 +224,7 @@
         [] LRU cache (important)
         [] LRU cache
     
-10): Slinding window and two pointer combined problems
+8): Slinding window and two pointer combined problems
     a) medium problems
         -[X] longest substring without repeating characters
         -[X] maximum consecutive ones 3
@@ -251,7 +240,7 @@
         -[X] minimum window substring
         -[X] minimum window subsequence
     
-11): Heaps (learing medium and hard problems)
+9): Heaps (learing medium and hard problems)
     a) learning
         -[] introduction to priority queues using binary heaps
         -[] min and max heap implementation
@@ -273,7 +262,7 @@
         -[] find median from data stream
         -[] K most frequent elements
 
-12): Greedy algorithms (easy , medium and hard)
+10): Greedy algorithms (easy , medium and hard)
     a) easy problems
         -[X] assign cookies
         -[X] fractional knapsack problem
@@ -292,7 +281,7 @@
         -[] merge interval
         -[] non overlapping intervals
 
-14): Binary trees (traversals , medium and hard problem)
+11): Binary trees (traversals , medium and hard problem)
     a) traversals
         -[X] introduction to trees
         -[X] binary tree representation in C++
@@ -335,7 +324,7 @@
         -[] Morris inorder traversal of a binary tree
         -[] flatten binary tree to linked-list
     
-15): Binary search tree (concepts and problems)
+12): Binary search tree (concepts and problems)
     a) concepts
         -[X] introduction to binary search tree
         -[X] search in a binary search tree
@@ -355,7 +344,7 @@
         -[] recover BST / correct two nodes with BST swapped
         -[] largest BST in binary tree
 
-16): Graphs(concepts and problems)
+13): Graphs(concepts and problems)
     a) learning
         -[X] graph and types
         -[X] graph representation in C++
@@ -415,7 +404,7 @@
         -[] Articulation Point
         -[] Kosaraju's Algorithm
 
-17): Dynamic Programming [patterns and problems]
+14): Dynamic Programming [patterns and problems]
     a) introduction to DP
         -[X] dynamic program introduction
     b) one dimenstional DP
@@ -493,7 +482,7 @@
         -[] Maximum XOR of two numbers in an array
         -[] Maximum XOR With an Element From Array
 
-19): Strings
+15): Strings
     a) Hard Problems
         -[] Minimum number of bracket reversals needed to make an expression balanced
         -[] Count and say
