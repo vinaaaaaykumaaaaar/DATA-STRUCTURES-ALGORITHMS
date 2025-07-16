@@ -1,21 +1,5 @@
 1): Solve problems on arrays (easy -> medium -> hard)
-    a) Easy
-        -[X] largest element in an array
-        -[X] second largest element in an array without sorting 
-        -[X] check if array is sorted
-        -[X] remove duplicate from the sorted array (two pointer problem)
-        -[X] left rotate an array by one place
-        -[X] left rotate an array by D place
-        -[X] move zeros to end
-        -[X] linear search
-        -[X] find the union
-        -[X] find missing number in an array
-        -[X] maximum consecutive ones
-        -[X] find the number that appears once and other number twice
-        -[X] longest subarrays with given sum K(positives)
-        -[X] longest subarrays with given sum K(positives and negatives)
     b) Medium 
-        -[X] 2sum problem
         -[] sort an array of 0's , 1's and 2's
         -[] majority element (>n/2 times)
         -[] kadane's algorithm , maximum subarray sum
@@ -102,8 +86,6 @@
     b) learn doubly linked-list
         [X] reverse a doubly linked-list
     c) medium problems on linked-list
-        [] middle of linked-list(tortoise-hare method)
-        [] reverse a linked-list(iterative)
         [] delete a loop in linked-list
         [] find the starting point of a linked-list
         [] length of loop in linked-list
