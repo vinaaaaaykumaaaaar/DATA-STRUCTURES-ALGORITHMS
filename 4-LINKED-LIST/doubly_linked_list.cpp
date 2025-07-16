@@ -52,6 +52,43 @@ public:
         ++count;
     }
 
+    bool remove(int value)
+    {
+        if (head == nullptr)
+        {
+            std::cout << "linked list is empty" << std::endl;
+            return false;
+        }
+
+        Node *curr = head;
+
+        while (curr != nullptr)
+        {
+            if (curr->data == value)
+            {
+                if (curr->prev != nullptr)
+                {
+                    Node *prev = curr->prev, *next = curr->next;
+                    prev->next = next;
+                    next->prev = prev;
+                }
+                else
+                {
+                    head = curr->next;
+                }
+
+                delete curr;
+                --count;
+
+                return true;
+            }
+
+            curr = curr->next;
+        }
+
+        return false;
+    }
+
     void display()
     {
         Node *curr = head;
@@ -72,9 +109,19 @@ public:
 int main()
 {
     LinkedList list;
+    list.insertAtFront(20);
+    list.insertAtEnd(30);
     list.insertAtFront(10);
-    list.insertAtEnd(20);
-    list.insertAtEnd(20);
+    list.insertAtEnd(40);
+    list.insertAtEnd(50);
+    list.display();
+    list.size();
+
+    list.remove(10);
+    list.display();
+    list.size();
+
+    list.remove(40);
     list.display();
     list.size();
 
