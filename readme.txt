@@ -86,7 +86,7 @@
     b) learn doubly linked-list
         [X] reverse a doubly linked-list
     c) medium problems on linked-list
-        [] delete a loop in linked-list
+        [] detect a loop in linked-list
         [] find the starting point of a linked-list
         [] length of loop in linked-list
         [] check if linked-list is palindrome or not
@@ -169,7 +169,7 @@
         [X] implementing queues using stacks
         [X] implementing stacks using linked-list
         [X] implementing queues using linked-list
-        [] check for balanced parenthesis
+        [X] check for balanced parenthesis
         [] implementing min stack
     b) prefix , postfix , infix conversion problems
         [] infix to postfix conversion using stacks
@@ -255,19 +255,6 @@
         -[] non overlapping intervals
 
 11): Binary trees (traversals , medium and hard problem)
-    a) traversals
-        -[X] introduction to trees
-        -[X] binary tree representation in C++
-        -[X] binary tree traversal in binary tree
-        -[X] preorder traversal of a binary tree
-        -[X] inorder traversal of a binary tree
-        -[X] postorder traversal of a binary tree
-        -[X] level order traversal in a spiral form
-        -[X] iterative preorder traversal of binary tree
-        -[X] iterative inorder traversal of binary tree
-        -[X] post order traversal of binary tree using 2 stacks
-        -[X] post order traversal of binary tree using 1 stacks
-        -[X] Preorder, Inorder, and Postorder Traversal in one Traversal
     b) medium problems
         -[] height of a binary tree
         -[] check if the binary tree is height balanced or not
@@ -300,8 +287,8 @@
 12): Binary search tree (concepts and problems)
     a) concepts
         -[X] introduction to binary search tree
-        -[X] search in a binary search tree
-        -[X] find min/max in a BST
+        -[] search in a binary search tree
+        -[] find min/max in a BST
     b) practice problems
         -[] ceil in a binary search tree
         -[] floor in a binary search tree
