@@ -80,7 +80,6 @@
 
 4): Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
     c) medium problems on linked-list
-        [] find the starting point of a linked-list
         [] check if linked-list is palindrome or not
         [] segrregrate odd or even nodes in linked-list
         [] remove Nth node from the back of the linked-list
