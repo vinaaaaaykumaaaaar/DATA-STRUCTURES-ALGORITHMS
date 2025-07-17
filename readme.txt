@@ -1,7 +1,5 @@
 1): Solve problems on arrays (easy -> medium -> hard)
     b) Medium 
-        -[] next permutation
-        -[] longest consecutive sequence in the array
         -[] set matrix zero
         -[] rotate matrix by 90 degree
         -[] print the matrix in spiral manner
