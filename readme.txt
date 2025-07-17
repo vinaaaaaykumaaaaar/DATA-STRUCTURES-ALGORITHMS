@@ -1,6 +1,5 @@
 1): Solve problems on arrays (easy -> medium -> hard)
     b) Medium 
-        -[] rearrange the array elements in positive and negative items
         -[] next permutation
         -[] longest consecutive sequence in the array
         -[] set matrix zero
