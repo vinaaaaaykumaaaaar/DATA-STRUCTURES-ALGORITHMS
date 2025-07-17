@@ -79,16 +79,11 @@
         [] sum of beauty of all substring
 
 4): Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
-    b) learn doubly linked-list
-        [X] reverse a doubly linked-list
     c) medium problems on linked-list
-        [] detect a loop in linked-list
         [] find the starting point of a linked-list
-        [] length of loop in linked-list
         [] check if linked-list is palindrome or not
         [] segrregrate odd or even nodes in linked-list
         [] remove Nth node from the back of the linked-list
-        [] delete the middle node from linked-list
         [] sort the linked-list
         [] sort the linked-list of 0's 1's and 2's by changing links
         [] find the intersection of Y linked-list
@@ -159,12 +154,8 @@
 
 7): Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
     a) learning
-        [X] implementing stacks using arrays
-        [X] implementing queues using arrays
         [X] implementing stacks using queues
         [X] implementing queues using stacks
-        [X] implementing stacks using linked-list
-        [X] implementing queues using linked-list
         [X] check for balanced parenthesis
         [] implementing min stack
     b) prefix , postfix , infix conversion problems
