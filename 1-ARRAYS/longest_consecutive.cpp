@@ -6,17 +6,20 @@
 #include <stack>
 #include <queue>
 #include <list>
+#include <unordered_set>
+#include <set>
 
 using namespace std;
 
 void solve(vector<int> &a)
 {
 
-    int ls = -100, c = 0, l = 1;
+    sort(a.begin(), a.end());
+    int ls = -1000, c = 0, l = 1;
 
     for (int i = 0; i < a.size(); i++)
     {
-        if (a[i] - 1 == ls)
+        if ((a[i] - 1) == ls)
         {
             c++;
             ls = a[i];
@@ -35,6 +38,17 @@ void solve(vector<int> &a)
 
 void optimal(vector<int> &a)
 {
+
+    unordered_set<int> s;
+
+    for (int i = 0; i < a.size(); i++)
+    {
+        s.insert(a[i]);
+    }
+
+    for (auto x : s)
+        cout << x << " ";
+    cout << endl;
 }
 
 int main()
@@ -43,8 +57,8 @@ int main()
     vector<int> a = {100, 102, 100, 101, 101, 4, 3, 2, 3, 2, 1, 1, 1, 2};
     int n, m, i, k;
 
-    solve(a);
-    // optimal(a);
+    // solve(a);
+    optimal(a);
     return 0;
 }
 
