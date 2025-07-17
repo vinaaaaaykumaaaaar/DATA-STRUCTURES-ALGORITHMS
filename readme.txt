@@ -1,14 +1,8 @@
 1): Solve problems on arrays (easy -> medium -> hard)
     b) Medium 
-        -[] set matrix zero
-        -[] rotate matrix by 90 degree
-        -[] print the matrix in spiral manner
         -[] count subarrays with the given sum
     c) Hard
         -[] pascal's triangle
-        -[] majority elements(>n/3 times)
-        -[X] 3 sum problem
-        -[] 4 sum problem
         -[] largest subarray with 0 sum
         -[] count number of subarray with given xor K
         -[] merge overlapping subintervals
@@ -20,7 +14,6 @@
 
 2): Binary search on 1D , 2D array and search space
     a) binary search on 1D array
-        -[X] binary search to find x in sorted array
         -[X] implement lower bound
         -[X] implement upper bound
         -[X] search insert position

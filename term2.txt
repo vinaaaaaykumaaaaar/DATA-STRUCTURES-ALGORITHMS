@@ -192,3 +192,17 @@ Graphs
         -[] Bridges in Graph
         -[] Articulation Point
         -[] Kosaraju's Algorithm
+
+1): Solve problems on arrays (easy -> medium -> hard)
+    b) Medium 
+        -[] count subarrays with the given sum
+    c) Hard
+        -[] pascal's triangle
+        -[] largest subarray with 0 sum
+        -[] count number of subarray with given xor K
+        -[] merge overlapping subintervals
+        -[] merge two sorted array without extra space
+        -[] find the repeating and missing number
+        -[] count inversions
+        -[] reverse pairs
+        -[] maximum product subarrays
