@@ -15,42 +15,63 @@ struct Node
     Node *next;
 };
 
-bool solve(Node *head)
+int solve(Node *head)
 {
 
     map<Node, int> m;
-
+    int t = 1;
     Node *temp = head;
+    int value;
 
     while (temp != nullptr)
     {
         // if (m.find(temp))
         // {
-
-        //     return true;
+        //     value = m[temp];
+        //     return t - value;
         // }
 
-        // m[temp] = 1;
+        // m[temp] = t;
+        // ++t;
         // temp = temp->next;
     }
+
+    return -1;
 }
 
-bool optimized(Node *head)
+bool loop(Node *head)
 {
-
     Node *fast = head, *slow = head;
 
     while (fast != nullptr && fast->next != nullptr)
     {
-        if (fast == slow)
+        fast = fast->next->next;
+        slow = slow->next;
+
+        if (slow == fast)
         {
             return true;
         }
-        fast = fast->next->next;
-        slow = slow->next;
     }
 
     return false;
+}
+
+int res(Node *head)
+{
+    if (loop(head))
+    {
+        Node *fast = head;
+        fast = fast->next->next;
+        int c = 2;
+
+        while (fast != head)
+        {
+            fast = fast->next->next;
+            c += 2;
+        }
+        return c;
+    }
 }
 
 int main()
