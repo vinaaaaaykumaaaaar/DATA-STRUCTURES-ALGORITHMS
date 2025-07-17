@@ -72,7 +72,6 @@
     a) learning
         [X] implementing stacks using queues
         [X] implementing queues using stacks
-        [X] check for balanced parenthesis
         [] implementing min stack
     b) prefix , postfix , infix conversion problems
         [] infix to postfix conversion using stacks
@@ -194,8 +193,6 @@
     
 
 14): Dynamic Programming [patterns and problems]
-    a) introduction to DP
-        -[X] dynamic program introduction
     b) one dimenstional DP
         -[X] climbing stairs 
         -[] Frog Jump(DP-3)
