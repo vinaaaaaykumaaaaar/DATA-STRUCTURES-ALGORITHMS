@@ -1,17 +1,3 @@
-1): Solve problems on arrays (easy -> medium -> hard)
-    b) Medium 
-        -[] count subarrays with the given sum
-    c) Hard
-        -[] pascal's triangle
-        -[] largest subarray with 0 sum
-        -[] count number of subarray with given xor K
-        -[] merge overlapping subintervals
-        -[] merge two sorted array without extra space
-        -[] find the repeating and missing number
-        -[] count inversions
-        -[] reverse pairs
-        -[] maximum product subarrays
-
 2): Binary search on 1D , 2D array and search space
     a) binary search on 1D array
         -[X] implement lower bound
@@ -143,7 +129,6 @@
 
 11): Binary trees (traversals , medium and hard problem)
     b) medium problems
-        -[] height of a binary tree
         -[] check if the binary tree is height balanced or not
         -[] diameter of binary tree
         -[] maximum path sum
