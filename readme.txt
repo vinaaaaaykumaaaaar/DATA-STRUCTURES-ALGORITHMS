@@ -67,7 +67,6 @@
         [X] largest odd number in a string
         [X] largest common prefix
         [X] isomorphic string
-        [X] check whether one string is rotation of another
         [X] check if two strings are anagram of each other
     b) medium string problems
         [] sort character by frequency
@@ -82,7 +81,6 @@
     c) medium problems on linked-list
         [] check if linked-list is palindrome or not
         [] segrregrate odd or even nodes in linked-list
-        [] remove Nth node from the back of the linked-list
         [] sort the linked-list
         [] sort the linked-list of 0's 1's and 2's by changing links
         [] find the intersection of Y linked-list
