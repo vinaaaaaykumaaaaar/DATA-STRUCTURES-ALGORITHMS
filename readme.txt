@@ -1,6 +1,5 @@
 3): Strings (Basics and Medium)
     b) medium string problems
-        [] sort character by frequency
         [] maximum nesting depth of paranthesis
         [] roman numbers to integers and vice-versa
         [] implement atoi
