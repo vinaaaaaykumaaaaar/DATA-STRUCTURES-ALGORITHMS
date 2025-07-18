@@ -1,12 +1,3 @@
-2): Binary search on 1D , 2D array and search space
-    a) binary search on 1D array
-        -[] floor/ceil in sorted array
-        -[] find the occurances of a number in the sorted array with the duplicates
-        -[] find minimum in rotated sorted array
-        -[] find how many times a array have been rotated
-        -[] find peek element
-
-
 3): Strings (Basics and Medium)
     b) medium string problems
         [] sort character by frequency
