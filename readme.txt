@@ -2,11 +2,8 @@
     a) binary search on 1D array
         -[] floor/ceil in sorted array
         -[] find the occurances of a number in the sorted array with the duplicates
-        -[] search in rotated sorted array 1
-        -[] search in rotated sorted array 2
         -[] find minimum in rotated sorted array
         -[] find how many times a array have been rotated
-        -[] single element in sorted array
         -[] find peek element
 
 
