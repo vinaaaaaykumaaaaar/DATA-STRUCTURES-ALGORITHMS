@@ -109,10 +109,7 @@
 
 10): Greedy algorithms (easy , medium and hard)
     a) easy problems
-        -[X] assign cookies
-        -[X] fractional knapsack problem
         -[] greedy algorithm to find the minimum number of coins
-        -[X] lemonade change
         -[] valid parenthesis checker
     b) medium / hard
         -[] N meetings in one room
