@@ -1,10 +1,6 @@
 2): Binary search on 1D , 2D array and search space
     a) binary search on 1D array
-        -[X] implement lower bound
-        -[X] implement upper bound
-        -[X] search insert position
         -[] floor/ceil in sorted array
-        -[] find the first or last occurances of a given number in a sorted array
         -[] find the occurances of a number in the sorted array with the duplicates
         -[] search in rotated sorted array 1
         -[] search in rotated sorted array 2
