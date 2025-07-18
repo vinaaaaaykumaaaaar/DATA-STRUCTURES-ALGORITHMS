@@ -20,6 +20,7 @@ int solve(vector<int> &a, int s, int e, int t)
         if (a[m] > t)
         {
             ans = m;
+            cout << m << endl;
             e = m - 1; // Search left half
         }
         else
@@ -35,6 +36,6 @@ int main()
 {
     vector<int> a = {3, 5, 8, 15, 19};
 
-    cout << solve(a, 0, a.size() - 1, 8) << endl; // Pass a.size()-1, not a.size()
+    cout << solve(a, 0, a.size() - 1, 9) << endl; // Pass a.size()-1, not a.size()
     return 0;
 }
