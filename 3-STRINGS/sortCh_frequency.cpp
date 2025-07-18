@@ -14,33 +14,26 @@ void solve(string &name)
 {
 
     unordered_map<char, int> m;
-    vector<pair<char, int>> p;
     for (auto x : name)
         m[x]++;
 
-    for (auto x : m) // structured binding (C++17)
-        p.push_back({x.first, x.second});
-
-    auto cmp = [&](pair<char, int> &a, pair<char, int> &b)
-    {
-        return a.second > b.second;
-    };
-
-    sort(p.begin(), p.end(), cmp);
-
+    vector<vector<char>> b(name.length() + 1);
+    for (auto x : m)
+        b[x.second].push_back(x.first);
     string ans = "";
 
-    for (auto x : p)
-        ans.append(x.second, x.first);
+    for (int i = name.size(); i >= 0; --i)
+    {
+        for (auto ch : b[i])
+            ans.append(i, ch);
+    }
 
     cout << ans << endl;
 }
-
 int main()
 {
 
-    string name = "abbA";
-    int n, m, i, k;
+    string name = "abb";
 
     solve(name);
     return 0;
