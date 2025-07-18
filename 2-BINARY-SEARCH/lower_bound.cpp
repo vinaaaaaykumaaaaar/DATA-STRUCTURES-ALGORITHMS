@@ -17,7 +17,7 @@ int solve(vector<int> &a, int s, int e, int t)
     {
         int m = s + (e - s) / 2; // Avoid potential overflow
 
-        if (a[m] > t)
+        if (a[m] >= t)
         {
             ans = m;
             e = m - 1; // Search left half
