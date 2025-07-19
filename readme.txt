@@ -2,7 +2,6 @@
     b) medium string problems
         [] maximum nesting depth of paranthesis
         [] roman numbers to integers and vice-versa
-        [] implement atoi
         [] count number of substring
         [] longest palindrome substring(without using DP)
         [] sum of beauty of all substring
@@ -28,8 +27,6 @@
 
 5): Recursion (pattern-wise)
     a) get a strong hold
-        [X] recursion implementation of atoi()
-        [X] pow(x,n)
         [] count good numbers
         [] sort a stack using recursion
         [] reverse a stack using recursion
