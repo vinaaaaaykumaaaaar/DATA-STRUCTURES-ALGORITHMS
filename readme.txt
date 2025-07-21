@@ -1,8 +1,5 @@
 6): Bit manipulation (concepts and problems)
-    a) learn bit manipulation
-        [] divide two numbers without using multiplication , division or mod operator
     b) interview problems
-        [] count the number of bits to be flipped to convert from A to B
         [] find the number that appears odd number of times
         [] power set
         [] find xor of number from L to R
