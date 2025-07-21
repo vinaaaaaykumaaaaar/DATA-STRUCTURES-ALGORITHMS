@@ -20,6 +20,7 @@ void solve(string &name)
     vector<vector<char>> b(name.length() + 1);
     for (auto x : m)
         b[x.second].push_back(x.first);
+
     string ans = "";
 
     for (int i = name.size(); i >= 0; --i)
