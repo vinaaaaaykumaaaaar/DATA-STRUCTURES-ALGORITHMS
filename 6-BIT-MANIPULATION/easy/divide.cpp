@@ -22,6 +22,10 @@ void solve(int d, int s)
     cout << c << endl;
 }
 
+void optimal(int d, int s)
+{
+}
+
 int main()
 {
 
