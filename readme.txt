@@ -1,7 +1,5 @@
 3): Strings (Basics and Medium)
     b) medium string problems
-        [] maximum nesting depth of paranthesis
-        [] roman numbers to integers and vice-versa
         [] count number of substring
         [] longest palindrome substring(without using DP)
         [] sum of beauty of all substring
