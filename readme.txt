@@ -3,7 +3,6 @@
         [] segrregrate odd or even nodes in linked-list
         [] sort the linked-list
         [] sort the linked-list of 0's 1's and 2's by changing links
-        [] find the intersection of Y linked-list
         [] add 2 numbers in a linkedlist
     d) medium problems on doubly linked-list
         [] delete all occurance of key in doubly linked list
