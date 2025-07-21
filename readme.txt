@@ -1,13 +1,3 @@
-4): Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
-    d) medium problems on doubly linked-list
-        [] find the pairs with given sum in doubly linke-list
-        [] remove duplicates from sorted doubly linked-list
-    e) hard problems on linked list
-        [] remove linked-list in group of given size K
-        [] rotate a linked-list
-        [] flattering a linked-list
-        [] clone a linked-list with random and next pointer
-
 5): Recursion (pattern-wise)
     a) get a strong hold
         [] count good numbers
