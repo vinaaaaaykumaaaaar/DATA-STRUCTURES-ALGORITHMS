@@ -1,11 +1,5 @@
 4): Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
-    c) medium problems on linked-list
-        [] segrregrate odd or even nodes in linked-list
-        [] sort the linked-list
-        [] sort the linked-list of 0's 1's and 2's by changing links
-        [] add 2 numbers in a linkedlist
     d) medium problems on doubly linked-list
-        [] delete all occurance of key in doubly linked list
         [] find the pairs with given sum in doubly linke-list
         [] remove duplicates from sorted doubly linked-list
     e) hard problems on linked list
