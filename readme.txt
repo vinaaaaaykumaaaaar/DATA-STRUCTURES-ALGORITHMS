@@ -139,12 +139,6 @@
         -[] largest BST in binary tree
 
 13): Graphs(concepts and problems)
-    a) learning
-        -[X] graph and types
-        -[X] graph representation in C++
-        -[X] connected components / logical explaination
-        -[X] breadth first search
-        -[X] deapth first search
     b) problems on bfs and dfs
         -[] number of provinces
         -[] connected components in a matrix
