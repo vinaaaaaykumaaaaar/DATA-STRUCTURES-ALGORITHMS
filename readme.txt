@@ -13,8 +13,6 @@
 
 7): Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
     a) learning
-        [X] implementing stacks using queues
-        [X] implementing queues using stacks
         [] implementing min stack
     b) prefix , postfix , infix conversion problems
         [] infix to postfix conversion using stacks
@@ -35,12 +33,6 @@
         [] remove K digits
         [] largest rectangle in a histogram
         [] maximal rectangles
-    
-        [] sliding window maximum
-        [] stock span problem
-        [] the celebrity problem
-        [] LRU cache (important)
-        [] LRU cache
     
 9): Heaps (learing medium and hard problems)
     a) learning
