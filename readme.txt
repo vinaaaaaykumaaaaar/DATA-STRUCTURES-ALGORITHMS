@@ -1,15 +1,9 @@
-3): Strings (Basics and Medium)
-    b) medium string problems
-        [] sum of beauty of all substring
-
 4): Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
     c) medium problems on linked-list
-        [] check if linked-list is palindrome or not
         [] segrregrate odd or even nodes in linked-list
         [] sort the linked-list
         [] sort the linked-list of 0's 1's and 2's by changing links
         [] find the intersection of Y linked-list
-        [] add 1 to a number representing linked-list
         [] add 2 numbers in a linkedlist
     d) medium problems on doubly linked-list
         [] delete all occurance of key in doubly linked list
