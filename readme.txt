@@ -1,7 +1,5 @@
 3): Strings (Basics and Medium)
     b) medium string problems
-        [] count number of substring
-        [] longest palindrome substring(without using DP)
         [] sum of beauty of all substring
 
 4): Learn linked-list ( singly linked-list , doubly linked-list, easy -> medium -> hard )
@@ -70,7 +68,7 @@
         [] remove K digits
         [] largest rectangle in a histogram
         [] maximal rectangles
-    d) implementation problems
+    
         [] sliding window maximum
         [] stock span problem
         [] the celebrity problem
