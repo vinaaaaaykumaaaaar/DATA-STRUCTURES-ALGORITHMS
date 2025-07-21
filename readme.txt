@@ -1,10 +1,3 @@
-5): Recursion (pattern-wise)
-    a) get a strong hold
-        [] count good numbers
-        [] sort a stack using recursion
-        [] reverse a stack using recursion
-    
-
 6): Bit manipulation (concepts and problems)
     a) learn bit manipulation
         [] divide two numbers without using multiplication , division or mod operator
