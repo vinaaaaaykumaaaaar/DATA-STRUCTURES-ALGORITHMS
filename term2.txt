@@ -206,3 +206,10 @@ Graphs
         -[] count inversions
         -[] reverse pairs
         -[] maximum product subarrays
+
+Linked-list
+      e) hard problems on linked list
+        [] remove linked-list in group of given size K
+        [] rotate a linked-list
+        [] flattering a linked-list
+        [] clone a linked-list with random and next pointer
