@@ -2,6 +2,7 @@
     a) learning
         [] implementing min stack
     b) prefix , postfix , infix conversion problems
+        [X] infix to postfix conversion using stacks
         [] prefix to infix conversion
         [] prefix to postfix conversion
         [] postfix to prefix conversion
