@@ -1,39 +1,3 @@
-6): Bit manipulation (concepts and problems)
-    b) interview problems
-        [] find the number that appears odd number of times
-        [] power set
-        [] find xor of number from L to R
-        [] find the two number appearing odd number of times
-    c) advanced maths
-        [] print prime factors of a numbers
-        [] all divisors of a number
-        [] sieve of eratosthenes
-        [] find prime factorization of a number using sieve
-        [] power(n,x)
-
-7): Stacks and Queues(learn pre-in post-fix, monotonic stack , implementation)
-    a) learning
-        [] implementing min stack
-    b) prefix , postfix , infix conversion problems
-        [] infix to postfix conversion using stacks
-        [] prefix to infix conversion
-        [] prefix to postfix conversion
-        [] postfix to prefix conversion
-        [] postfix to infix conversion
-        [] convert infix to prefix notation
-    c) Monotonic stacks / queues problems(very very very important )
-        [] next greater element
-        [] next greater element 2
-        [] next smaller element
-        [] number of NGE's to right
-        [] trapping rainwater 
-        [] sum of subarray minimum
-        [] asteroid collosion
-        [] sum of subarray range
-        [] remove K digits
-        [] largest rectangle in a histogram
-        [] maximal rectangles
-    
 9): Heaps (learing medium and hard problems)
     a) learning
         -[] introduction to priority queues using binary heaps
@@ -41,9 +5,6 @@
         -[] check if an array represents a min-heap or not
         -[] convert min heap to max heap
     
-
-
-
 11): Binary trees (traversals , medium and hard problem)
     b) medium problems
         -[] check if the binary tree is height balanced or not
