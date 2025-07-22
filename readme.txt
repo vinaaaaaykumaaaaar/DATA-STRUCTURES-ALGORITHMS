@@ -42,21 +42,7 @@
         -[] convert min heap to max heap
     
 
-10): Greedy algorithms (easy , medium and hard)
-    a) easy problems
-        -[] greedy algorithm to find the minimum number of coins
-        -[] valid parenthesis checker
-    b) medium / hard
-        -[] N meetings in one room
-        -[X] jump game
-        -[] jump game 2
-        -[] minimum number of platforms required for a railway
-        -[X] job sequencing problem
-        -[] candy
-        -[] problem for shortest job first CPU scheduling
-        -[] insert interval
-        -[] merge interval
-        -[] non overlapping intervals
+
 
 11): Binary trees (traversals , medium and hard problem)
     b) medium problems

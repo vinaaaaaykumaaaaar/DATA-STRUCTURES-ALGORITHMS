@@ -123,19 +123,5 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
     [] - 4 Sum - Closest Quadruple
 
 
- - Expert Problems for Competitive Programmers
-
-    [] - MO’s Algorithm
-    [] - Square Root (Sqrt) Decomposition Algorithm
-    [] - Sparse Table
-    [] - Range sum query using Sparse Table
-    [] - Range Minimum Query (Square Root Decomposition and Sparse Table)
-    [] - Range LCM Queries
-    [] - Merge Sort Tree for Range Order Statistics
-    [] - Minimum number of jumps to reach end
-    [] - Space optimization using bit manipulations
-    [] - Max value of Sum( i*arr[i]) with only rotations allowed
-
-
 
      
