@@ -37,12 +37,12 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
      [X] - Leaders in an array
      [X] - Check if Sorted
      [X] - Remove Duplicates from Sorted
-     [X] - Generate all Subarrays
+     [] - Generate all Subarrays
      [X] - Reverse an Array
-     [X] - Rotate an Array
-     [X] - Zeroes to End
-     [X] - Min Increments to Make Equal
-     [X] - Min Cost to Make Size 1
+     [] - Rotate an Array
+     [] - Zeroes to End
+     [] - Min Increments to Make Equal
+     [] - Min Cost to Make Size 1
 
    - Easy Problems on Array
 
