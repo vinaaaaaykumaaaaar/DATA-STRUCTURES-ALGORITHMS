@@ -53,13 +53,30 @@ void solve(vector<int> &a)
     cout << endl;
 }
 
+void optimal(vector<int> &a)
+{
+
+    for (int i = 1; i < a.size(); i++)
+    {
+        if (i & 1)
+        {
+            if (a[i] <= a[i - 1])
+                swap(a[i], a[i - 1]);
+        }
+    }
+
+    for (auto x : a)
+        cout << x << " ";
+    cout << endl;
+}
+
 int main()
 {
 
     vector<int> a = {1, 2, 2, 1};
     vector<int> b = {1, 3, 2};
 
-    solve(a);
-    solve(b);
+    optimal(a);
+    optimal(b);
     return 0;
 }
