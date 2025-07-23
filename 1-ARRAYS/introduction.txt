@@ -42,7 +42,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
      [X] - Rotate an Array
      [X] - Zeroes to End
      [X] - Min Increments to Make Equal
-     [] - Min Cost to Make Size 1
+     [X] - Min Cost to Make Size 1
 
    - Easy Problems on Array
 
