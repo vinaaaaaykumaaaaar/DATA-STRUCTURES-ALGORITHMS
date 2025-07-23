@@ -1,0 +1,26 @@
+what is heap?
+    Heap is a complete binary tree that comes with the heap order property
+
+what is CBT?
+    Binary tree that is compeleted filled ie (2 nodes ) expect the last level
+    Nodes are always lean to left
+
+Heap 
+    types
+        max heaps 
+        min heaps
+    
+max heap -> always its children nodes are lesser than the parent nodes
+min heap -> always its children nodes are more than the parent nodes
+
+insertion 
+    using arrays 
+        x 60 50 40 30 20
+
+    Node -> ith index
+    Left child -> 2+i index
+    rigth vhilr -> 2*i + 1
+    parent -> i/2
+
+
+    
