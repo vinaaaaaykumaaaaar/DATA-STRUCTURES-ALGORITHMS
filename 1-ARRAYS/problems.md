@@ -1,0 +1,40 @@
+a) easy
+ -[X] largest element in an array
+ -[X] second largest element in an array without sorting
+ -[X] check if array is sorted
+ -[X] remove duplicate from the sorted array (two pointer problem)
+ -[X] left rotate an array by one place
+ -[X] left rotate an array by D place
+ -[X] move zeros to end
+ -[X] linear search
+ -[X] find the union
+ -[X] find missing number in an array
+ -[X] maximum consecutive ones
+ -[X] find the number that appears once and other number twice
+ -[X] longest subarrays with given sum K(positives)
+ -[X] longest subarrays with given sum K(positives and negatives)
+b) Medium
+ -[X] 2sum problem
+ -[] sort an array of 0's , 1's and 2's
+ -[] majority element (>n/2 times)
+ -[] kadane's algorithm , maximum subarray sum
+ -[] print subarray with maximum subarray sum(extended version of above problem)
+ -[] stock buy and sell
+ -[] rearrange the array elements in positive and negative items
+ -[] next permutation
+ -[] leaders in array problems
+ -[] longest consecutive sequence in the array
+ -[] set matrix zero
+ -[] rotate matrix by 90 degree
+ -[] print the matrix in spiral manner
+ -[] count subarrays with the given sum
+c)hard
+ -[] pascal's triangle
+ -[] largest subarray with 0 sum
+ -[] count number of subarray with given xor K
+ -[] merge overlapping subintervals
+ -[] merge two sorted array without extra space
+ -[] find the repeating and missing number
+ -[] count inversions
+ -[] reverse pairs
+ -[] maximum product subarrays
