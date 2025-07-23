@@ -33,7 +33,7 @@ int main()
 {
 
     vector<int> a = {10, 20, 30, 40, 50};
-    vector<int> v = {90, 80, 100, 70, 40, 30};
+    vector<int> v = {1, 2, 3, 4, 5, 2};
 
     solve(a);
     solve(v);
