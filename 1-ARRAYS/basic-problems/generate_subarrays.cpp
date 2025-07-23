@@ -26,6 +26,10 @@ void solve(vector<int> &a)
     }
 }
 
+void recursive(vector<int> &a, int s, int e)
+{
+}
+
 int main()
 {
 
