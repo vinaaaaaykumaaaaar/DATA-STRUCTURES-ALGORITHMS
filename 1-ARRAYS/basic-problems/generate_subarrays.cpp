@@ -26,8 +26,70 @@ void solve(vector<int> &a)
     }
 }
 
-void recursive(vector<int> &a, int s, int e)
+vector<vector<int>> helper(vector<int> &a, int i)
 {
+    if (i >= a.size())
+        return {{}};
+
+    vector<vector<int>> partial = helper(a, i + 1);
+
+    vector<vector<int>> ans;
+
+    for (auto x : partial)
+        ans.push_back(x);
+
+    for (auto x : partial)
+        x.push_back(a[i]), ans.push_back(x);
+
+    return ans;
+}
+
+void recursive(vector<int> &a)
+{
+
+    vector<vector<int>> ans = helper(a, 0);
+
+    for (auto x : ans)
+    {
+        for (auto y : x)
+        {
+            cout << y << " ";
+        }
+        cout << endl;
+    }
+}
+
+void recurion(vector<int> &a, int i, vector<int> &subset, vector<vector<int>> &ans)
+{
+
+    if (i == a.size())
+    {
+        ans.push_back(subset);
+        return;
+    }
+
+    // have to include ith element
+    subset.push_back(a[i]);
+    recurion(a, i + 1, subset, ans);
+
+    // not to include ith element
+    subset.pop_back();
+    recurion(a, i + 1, subset, ans);
+}
+
+void optimal_recursion(vector<int> &a)
+{
+    vector<vector<int>> ans;
+    vector<int> subset;
+
+    recurion(a, 0, subset, ans);
+
+    for (auto x : ans)
+    {
+        for (auto y : x)
+            cout << y << " ";
+        cout << endl;
+    }
 }
 
 int main()
@@ -38,11 +100,11 @@ int main()
     vector<int> c = {1, 2, 3, 4};
 
     cout << "-----------------------------------" << endl;
-    solve(a);
+    optimal_recursion(a);
     cout << "-----------------------------------" << endl;
-    solve(b);
+    optimal_recursion(b);
     cout << "-----------------------------------" << endl;
-    solve(c);
+    optimal_recursion(c);
     cout << "-----------------------------------" << endl;
     return 0;
 }
