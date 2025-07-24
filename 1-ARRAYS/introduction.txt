@@ -48,9 +48,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
 
      [X] - Distinct Elements
      [X] - Duplicate within K Distance
-     [] - Make Even Positioned Greater
-     [] - Sum of all Subarrays
-     [] - Stock Buy and Sell – Multiple Transactions
+     [X] - Make Even Positioned Greater
+     [X] - Sum of all Subarrays
+     [] - Stock Buy and Sell – Multiple Transactions 
      [] - Single Among Doubles
      [] - Missing Number
      [] - Missing and Repeating
