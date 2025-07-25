@@ -52,7 +52,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
      [X] - Sum of all Subarrays
      [] - Stock Buy and Sell – Multiple Transactions 
      [] - Single Among Doubles
-     [] - Missing Number
+     [X] - Missing Number
      [] - Missing and Repeating
      [] - Only Repeating from 1 to n-1
      [] - Sorted Subsequence of Size 3
