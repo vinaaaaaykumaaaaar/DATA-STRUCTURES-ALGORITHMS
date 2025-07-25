@@ -76,6 +76,9 @@ void optimal(vector<int> &a, vector<int> &b)
 
     int i = 0, j = 0;
 
+    // tc -> O(n+m);
+    // sc ->  O(n+m ) if we consider the vector size as well
+
     while (i < a.size() && j < b.size())
     {
         // Add the smaller element (or either if equal)

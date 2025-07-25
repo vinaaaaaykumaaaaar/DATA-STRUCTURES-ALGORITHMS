@@ -7,7 +7,7 @@ a) easy
  -[X] left rotate an array by D place
  -[X] move zeros to end
  -[X] linear search
- -[] find the union
+ -[X] find the union
  -[] find missing number in an array
  -[] maximum consecutive ones
  -[] find the number that appears once and other number twice

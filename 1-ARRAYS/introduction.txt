@@ -69,7 +69,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
      [] - Chocolate Distribution Problem
      [] - Union of two arrays
      [] - Intersection of two arrays
-     [] - Union of two sorted arrays
+     [X] - Union of two sorted arrays
      [] - Intersection of two sorted arrays
 
    - Medium Problems on Array
