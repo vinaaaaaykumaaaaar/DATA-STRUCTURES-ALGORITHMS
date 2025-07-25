@@ -14,9 +14,9 @@ a) easy
  -[] longest subarrays with given sum K(positives)
  -[] longest subarrays with given sum K(positives and negatives)
 b) Medium
- -[] 2sum problem
- -[] sort an array of 0's , 1's and 2's
- -[] majority element (>n/2 times)
+ -[X] 2sum problem
+ -[X] sort an array of 0's , 1's and 2's
+ -[X] majority element (>n/2 times)
  -[] kadane's algorithm , maximum subarray sum
  -[] print subarray with maximum subarray sum(extended version of above problem)
  -[] stock buy and sell
