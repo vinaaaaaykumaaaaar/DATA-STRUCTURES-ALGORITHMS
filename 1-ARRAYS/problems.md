@@ -11,8 +11,8 @@ a) easy
  -[X] find missing number in an array
  -[X] maximum consecutive ones
  -[X] find the number that appears once and other number twice
- -[] longest subarrays with given sum K(positives)
- -[] longest subarrays with given sum K(positives and negatives)
+ -[X] longest subarrays with given sum K(positives)
+ -[X] longest subarrays with given sum K(positives and negatives)
 b) Medium
  -[X] 2sum problem
  -[X] sort an array of 0's , 1's and 2's
