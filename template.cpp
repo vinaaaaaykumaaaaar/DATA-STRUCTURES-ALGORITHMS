@@ -43,7 +43,7 @@ int main()
     cout << "------------------------  O P T I M A L  ------------------------" << endl;
     for (auto test_case : test_cases)
     {
-        better(test_case);
+        optimal(test_case);
     }
 
     cout << "-----------------------------------------------------------------" << endl;

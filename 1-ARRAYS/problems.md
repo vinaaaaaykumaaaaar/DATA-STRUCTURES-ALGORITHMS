@@ -8,7 +8,7 @@ a) easy
  -[X] move zeros to end
  -[X] linear search
  -[X] find the union
- -[] find missing number in an array
+ -[X] find missing number in an array
  -[] maximum consecutive ones
  -[] find the number that appears once and other number twice
  -[] longest subarrays with given sum K(positives)
