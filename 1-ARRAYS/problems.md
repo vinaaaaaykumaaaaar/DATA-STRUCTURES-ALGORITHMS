@@ -9,7 +9,7 @@ a) easy
  -[X] linear search
  -[X] find the union
  -[X] find missing number in an array
- -[] maximum consecutive ones
+ -[X] maximum consecutive ones
  -[] find the number that appears once and other number twice
  -[] longest subarrays with given sum K(positives)
  -[] longest subarrays with given sum K(positives and negatives)
