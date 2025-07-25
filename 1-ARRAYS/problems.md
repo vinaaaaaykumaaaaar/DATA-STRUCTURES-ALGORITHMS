@@ -22,7 +22,7 @@ b) Medium
  -[] stock buy and sell
  -[] rearrange the array elements in positive and negative items
  -[] next permutation
- -[] leaders in array problems
+ -[X] leaders in array problems
  -[] longest consecutive sequence in the array
  -[] set matrix zero
  -[] rotate matrix by 90 degree
