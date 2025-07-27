@@ -23,6 +23,20 @@ using namespace std;
 
 void brute_force(vector<int> &a)
 {
+    int sum = a[0];
+
+    for (int i = 0; i < a.size(); i++)
+    {
+        int partial_sum = 0;
+
+        for (int j = i; j < a.size(); j++)
+        {
+            partial_sum += a[j];
+            sum = max(sum, partial_sum);
+        }
+    }
+
+    cout << sum << endl;
 }
 
 void optimal(vector<int> &a)
