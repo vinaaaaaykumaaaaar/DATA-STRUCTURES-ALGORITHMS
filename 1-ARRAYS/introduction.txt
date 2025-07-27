@@ -55,7 +55,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
      [X] - Missing Number
      [X] - Missing and Repeating
      [X] - Only Repeating from 1 to n-1
-     [] - Sorted Subsequence of Size 3
+     [X] - Sorted Subsequence of Size 3
      [X] - Binary Sort
      [X] - Stable Binary Sort
      [X] - Stable Binary Sort with O(1) Space
@@ -64,7 +64,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
      [] - K Concatenation Max Subarray Sum
      [] - Max Subarray Product
      [] - Equilibrium index
-     [] - Two Sum - Find if there is a Pair
+     [X] - Two Sum - Find if there is a Pair
      [] - Two Sum - Closest Pair
      [] - Chocolate Distribution Problem
      [] - Union of two arrays
