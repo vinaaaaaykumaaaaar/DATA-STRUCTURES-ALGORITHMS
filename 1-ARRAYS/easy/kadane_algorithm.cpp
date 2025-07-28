@@ -41,6 +41,7 @@ void brute_force(vector<int> &a)
 
 void optimal(vector<int> &a)
 {
+    
 }
 
 int main()
