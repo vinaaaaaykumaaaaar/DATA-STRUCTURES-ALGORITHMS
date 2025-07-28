@@ -1,8 +1,8 @@
 
     a) binary search on 1D array
         -[X] binary search to find x in sorted array
-        -[] implement lower bound
-        -[] implement upper bound
+        -[X] implement lower bound
+        -[X] implement upper bound
         -[] search insert position
         -[] floor/ceil in sorted array
         -[] find the first or last occurances of a given number in a sorted array
