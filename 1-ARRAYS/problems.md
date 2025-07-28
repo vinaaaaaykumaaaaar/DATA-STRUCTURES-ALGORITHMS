@@ -17,10 +17,10 @@ b) Medium
  -[X] 2sum problem
  -[X] sort an array of 0's , 1's and 2's
  -[X] majority element (>n/2 times)
- -[] kadane's algorithm , maximum subarray sum
- -[] print subarray with maximum subarray sum(extended version of above problem)
- -[] stock buy and sell
- -[] rearrange the array elements in positive and negative items
+ -[X] kadane's algorithm , maximum subarray sum
+ -[X] print subarray with maximum subarray sum(extended version of above problem)
+ -[X] stock buy and sell
+ -[X] rearrange the array elements in positive and negative items
  -[] next permutation
  -[X] leaders in array problems
  -[] longest consecutive sequence in the array

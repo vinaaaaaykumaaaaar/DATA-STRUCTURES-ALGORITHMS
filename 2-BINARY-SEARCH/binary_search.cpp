@@ -9,30 +9,60 @@
 
 using namespace std;
 
-int binary(vector<int> &a, int s, int e, int t)
+int binary_iterative(vector<int> &a, int target)
 {
 
-    if (s > e)
-        return -1;
-    int m = (s + e) / 2;
+    int high = a.size() - 1, low = 0;
 
-    if (a[m] == t)
-        return m;
-    else if (a[m] > t)
-        return binary(a, s, m - 1, t);
+    while (low <= high)
+    {
+        int mid = (low + high) / 2;
+        if (a[mid] == target)
+        {
+            return mid + 1;
+        }
+        else if (a[mid] > target)
+        {
+            high = mid - 1;
+        }
+        else
+        {
+            low = mid + 1;
+        }
+    }
+
+    return -1;
+}
+
+int binary_recursive(vector<int> &a, int start, int end, int target)
+{
+
+    if (start > end)
+    {
+        return -1;
+    }
+    int mid = (start + end) / 2;
+    if (a[mid] == target)
+    {
+        return mid + 1;
+    }
+    else if (a[mid] > target)
+    {
+        binary_recursive(a, start, mid - 1, target);
+    }
     else
-        return binary(a, m + 1, e, t);
+    {
+        binary_recursive(a, mid + 1, end, target);
+    }
 }
 
 int main()
 {
 
     vector<int> a = {1, 2, 3, 4, 5, 6};
-    int n, m, i, k;
 
-    cout << binary(a, 0, a.size() - 1, 6);
+    cout << binary_iterative(a, 7) << endl;
+    cout << binary_recursive(a, 0, a.size() - 1, 7) << endl;
 
     return 0;
 }
-
-// 3 1 -2 -5 2 -4 -> -2 3 -5 1 -4 2
