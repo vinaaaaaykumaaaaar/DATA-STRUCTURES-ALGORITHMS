@@ -41,7 +41,22 @@ void brute_force(vector<int> &a)
 
 void optimal(vector<int> &a)
 {
-    
+
+    int maximum_sum = a[0];
+    int sum = 0;
+
+    for (int i = 0; i < a.size(); i++)
+    {
+        sum = sum + a[i];
+        maximum_sum = max(sum, maximum_sum);
+
+        if (sum < 0)
+        {
+            sum = 0;
+        }
+    }
+
+    cout << maximum_sum << endl;
 }
 
 int main()
