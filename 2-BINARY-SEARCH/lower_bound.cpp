@@ -1,40 +1,29 @@
+/*
+Problem Statement: Given a sorted array of N integers and an integer x, write a program to find the lower bound of x.
+
+Pre-requisite: Binary Search algorithm
+
+Examples
+
+Example 1:
+Input Format: N = 4, arr[] = {1,2,2,3}, x = 2
+Result: 1
+Explanation: Index 1 is the smallest index such that arr[1] >= x.
+
+Example 2:
+Input Format: N = 5, arr[] = {3,5,8,15,19}, x = 9
+Result: 3
+Explanation: Index 3 is the smallest index such that arr[3] >= x.
+
+*/
+
 #include <iostream>
 #include <vector>
-#include <string>
-#include <algorithm>
-#include <map>
-#include <stack>
-#include <queue>
-#include <list>
 
 using namespace std;
 
-int solve(vector<int> &a, int s, int e, int t)
-{
-    int ans = e; // Initialize ans (or could be a.size() if searching entire array)
-
-    while (s <= e)
-    {
-        int m = s + (e - s) / 2; // Avoid potential overflow
-
-        if (a[m] >= t)
-        {
-            ans = m;
-            e = m - 1; // Search left half
-        }
-        else
-        {
-            s = m + 1; // Search right half
-        }
-    }
-
-    return ans;
-}
-
 int main()
 {
-    vector<int> a = {3, 5, 8, 15, 19};
-
-    cout << solve(a, 0, a.size() - 1, 8) << endl; // Pass a.size()-1, not a.size()
-    return 0;
+    vector<int> a = {1, 2, 2, 3};
+    vector<int> b = {3, 5, 8, 15, 19};
 }

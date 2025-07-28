@@ -1,0 +1,137 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        B I N A R Y   S E A R C H   P A T T E R N S       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+1. What is Binary Search?
+
+* Definition   : A divide-and-conquer algorithm that repeatedly splits a sorted search space in half to locate a target element or satisfy a predicate.
+* Applicability: Works only on monotonic (sorted) data or when you can model the solution domain as monotonic.
+* Time Complexity: O(log n)
+* Space Complexity: O(1)
+
+2. Core Patterns in Binary Search
+
+* Standard Search
+* First/Last Occurrence
+* Lower/Upper Bound
+* Binary Search on Answer
+* Search in Rotated Sorted Array
+* Peak/Valley (Unimodal) Search
+
+3. Time and Space Complexity Comparison
+
+| Operation                      | Time     | Extra Space |
+| ------------------------------ | -------- | ----------- |
+| Standard Binary Search         | O(log n) | O(1)        |
+| First/Last Occurrence          | O(log n) | O(1)        |
+| Lower/Upper Bound              | O(log n) | O(1)        |
+| Binary Search on Answer        | O(log M) | O(1)        |
+| Search in Rotated Sorted Array | O(log n) | O(1)        |
+| Peak/Valley (Unimodal) Search  | O(log n) | O(1)        |
+
+4. Problems Organized by Pattern and Difficulty
+
+ Foundation Problems (Build a Strong Base)
+    * Understand simple sorted-array search: implement classic binary search for an integer array.
+    * Practice computing middle index safely (`mid = lo + (hi - lo) / 2`).
+
+5. Patterns 
+    -  Standard Search
+    -  First and Last Occurrence
+    -  Lower and Upper Bounds
+    -  Binary Search on Answer
+    -  Search in Rotated Sorted Array
+    -  Peak / Valley (Unimodal) Search
+
+Here's a comprehensive roadmap for mastering binary search, divided into 4 levels:
+
+## 1. BASIC (Fundamental Problems)
+
+**Master these core concepts first:**
+
+-[X] **Binary Search on Sorted Array** (LeetCode 704)
+-[] **Find First and Last Position of Element** (LeetCode 34) 
+-[] **Search Insert Position** (LeetCode 35)
+-[] **Find Peak Element** (LeetCode 162)
+-[] **Search in Rotated Sorted Array** (LeetCode 33)
+-[] **Find Minimum in Rotated Sorted Array** (LeetCode 153)
+-[] **Search a 2D Matrix** (LeetCode 74)
+-[] **Valid Perfect Square** (LeetCode 367)
+-[] **Guess Number Higher or Lower** (LeetCode 374)
+
+## 2. EASY Level
+
+-[] **Sqrt(x)** (LeetCode 69)
+-[] **First Bad Version** (LeetCode 278)
+-[] **Two Sum II - Input Array Is Sorted** (LeetCode 167)
+-[] **Intersection of Two Arrays** (LeetCode 349)
+-[] **Intersection of Two Arrays II** (LeetCode 350)
+-[] **Arranging Coins** (LeetCode 441)
+-[] **Find Smallest Letter Greater Than Target** (LeetCode 744)
+-[] **Peak Index in a Mountain Array** (LeetCode 852)
+-[] **Binary Search** (GeeksforGeeks)
+-[] **Count of Smaller Numbers After Self** (Easy version)
+
+## 3. MEDIUM Level
+
+**Search Space Manipulation:**
+-[] **Search in Rotated Sorted Array II** (LeetCode 81)
+-[] **Find Minimum in Rotated Sorted Array II** (LeetCode 154)
+-[] **Search a 2D Matrix II** (LeetCode 240)
+-[] **Kth Smallest Element in a Sorted Matrix** (LeetCode 378)
+
+**Binary Search on Answer:**
+-[] **Capacity To Ship Packages Within D Days** (LeetCode 1011)
+-[] **Koko Eating Bananas** (LeetCode 875)
+-[] **Minimum Number of Days to Make m Bouquets** (LeetCode 1482)
+-[] **Magnetic Force Between Two Balls** (LeetCode 1552)
+-[] **Split Array Largest Sum** (LeetCode 410)
+
+**Advanced Patterns:**
+-[] **Find K Closest Elements** (LeetCode 658)
+-[] **Find Right Interval** (LeetCode 436)
+-[] **Random Pick with Weight** (LeetCode 528)
+-[] **Online Election** (LeetCode 911)
+-[] **Time Based Key-Value Store** (LeetCode 981)
+-[] **Snapshot Array** (LeetCode 1146)
+
+## 4. HARD Level
+
+**Complex Search Spaces:**
+-[] **Median of Two Sorted Arrays** (LeetCode 4)
+-[] **Find K-th Smallest Pair Distance** (LeetCode 719)
+-[] **K-th Smallest Prime Fraction** (LeetCode 786)
+-[] **Minimize Max Distance to Gas Station** (LeetCode 774)
+
+**Advanced Binary Search on Answer:**
+-[] **Cutting Ribbons** (LeetCode 1891)
+-[] **Divide Chocolate** (LeetCode 1231)
+-[] **Maximum Running Time of N Computers** (LeetCode 2141)
+
+**Multi-dimensional Problems:**
+-[] **Count of Range Sum** (LeetCode 327)
+-[] **Count of Smaller Numbers After Self** (LeetCode 315)
+-[] **Reverse Pairs** (LeetCode 493)
+
+**GeeksforGeeks Specific:**
+-[] **Allocate Minimum Number of Pages**
+-[] **Aggressive Cows**
+-[] **Painter's Partition Problem**
+-[] **Wood Cutting**
+
+## Key Patterns to Master:
+
+1. **Classic Binary Search** - Find exact element
+2. **Lower/Upper Bound** - Find insertion positions  
+3. **Search in Rotated Arrays** - Handle rotation pivot
+4. **Binary Search on Answer** - Search in solution space
+5. **2D Matrix Search** - Extended search space
+6. **Predicate-based Search** - Custom conditions
+
+## Practice Strategy:
+
+1. **Start with Basic** - Build strong foundation
+2. **Focus on Templates** - Master different BS templates
+3. **Identify Patterns** - Recognize when to use BS
+4. **Practice Edge Cases** - Handle duplicates, empty arrays
+5. **Time Complexity** - Always aim for O(log n)
+
+This progression will give you a solid understanding of binary search patterns commonly asked in interviews!
