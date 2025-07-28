@@ -59,8 +59,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                A R R A Y S - V E C T O R S     
      [X] - Binary Sort
      [X] - Stable Binary Sort
      [X] - Stable Binary Sort with O(1) Space
-     [] - Sort in Wave Form
-     [] - Max Subarray Sum
+     [X] - Sort in Wave FormS
+     [X] - Max Subarray Sum
      [] - K Concatenation Max Subarray Sum
      [] - Max Subarray Product
      [] - Equilibrium index
