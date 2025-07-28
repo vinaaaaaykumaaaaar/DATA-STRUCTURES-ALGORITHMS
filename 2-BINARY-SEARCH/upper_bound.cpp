@@ -1,32 +1,39 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <map>
-#include <stack>
-#include <queue>
-#include <list>
+/*
+Implement Upper Bound
 
+Problem Statement: Given a sorted array of N integers and an integer x, write a program to find the upper bound of x.
+
+Pre-requisite: Binary Search algorithm
+
+Examples
+
+Example 1:
+Input Format: N = 4, arr[] = {1,2,2,3}, x = 2
+Result: 3
+Explanation: Index 3 is the smallest index such that arr[3] > x.
+
+Example 2:
+Input Format: N = 6, arr[] = {3,5,8,9,15,19}, x = 9
+Result: 4
+Explanation: Index 4 is the smallest index such that arr[4] > x.
+
+*/
+
+#include <bits/stdc++.h>
 using namespace std;
 
-int solve(vector<int> &a, int s, int e, int t)
+int upper_bound(vector<int> &a, int t)
 {
-    int ans = e; // Initialize ans (or could be a.size() if searching entire array)
-
-    while (s <= e)
+    int high = a.size(), low = 0;
+    int ans = -1;
+    while (low <= high)
     {
-        int m = s + (e - s) / 2; // Avoid potential overflow
+        int mid = low + (high - low) / 2;
 
-        if (a[m] > t)
-        {
-            ans = m;
-            cout << m << endl;
-            e = m - 1; // Search left half
-        }
+        if (a[mid] > t)
+            ans = mid, high = mid - 1;
         else
-        {
-            s = m + 1; // Search right half
-        }
+            low = mid + 1;
     }
 
     return ans;
@@ -34,8 +41,11 @@ int solve(vector<int> &a, int s, int e, int t)
 
 int main()
 {
-    vector<int> a = {3, 5, 8, 15, 19};
+    vector<int> a = {1, 2, 2, 3};
+    vector<int> b = {3, 5, 8, 9, 15, 19};
 
-    cout << solve(a, 0, a.size() - 1, 9) << endl; // Pass a.size()-1, not a.size()
+    cout << upper_bound(a, 2) << endl;
+    cout << upper_bound(b, 9) << endl;
+
     return 0;
 }
