@@ -13,9 +13,11 @@ int charToInteger(char c)
 // Recursive function to convert a string to integer
 int recursiveAtoi(const std::string &str, int index)
 {
-    // base case: If we've reached the begin of the string
+
     if (index < 0)
+    {
         return 0;
+    }
 
     int lastDigit = charToInteger(str[index]);
 
@@ -35,10 +37,10 @@ int atoiRecursive(std::string str)
 
 int main()
 {
-    std::string numStr;
-    std::cin >> numStr;
+    std::string numStr = "123465";
 
     int num = atoiRecursive(numStr);
-
     std::cout << num << std::endl;
+
+    return 0;
 }
