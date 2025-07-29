@@ -29,6 +29,10 @@ Explanation: You need to calculate 2.10000 raised to 3 which gives ans 9.26100
 
 int pow(int number, int power)
 {
+
+    if (power == 0)
+        return 1;
+
     if (power == 1)
         return number;
 
@@ -37,7 +41,7 @@ int pow(int number, int power)
 
 int main()
 {
-    int number = 2, power = 10;
+    int number = 2, power = 0;
 
     std::cout << pow(number, power) << std::endl;
 
