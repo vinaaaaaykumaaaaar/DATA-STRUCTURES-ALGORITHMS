@@ -25,7 +25,6 @@ void sortInsert(stack<int> &s, int x)
     if (s.empty() || s.top() < x)
     {
         s.push(x);
-
         return;
     }
 
@@ -37,7 +36,6 @@ void sortInsert(stack<int> &s, int x)
 
 void sort(stack<int> &s)
 {
-
     if (!s.empty())
     {
         int x = s.top();
@@ -46,7 +44,6 @@ void sort(stack<int> &s)
         sortInsert(s, x);
     }
 }
-
 int main()
 {
     stack<int> s;
