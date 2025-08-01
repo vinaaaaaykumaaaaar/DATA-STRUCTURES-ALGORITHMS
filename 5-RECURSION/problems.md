@@ -3,13 +3,13 @@
         [X] pow(x,n)
         [] count good numbers
         [X] sort a stack using recursion
-        [] reverse a stack using recursion
+        [X] reverse a stack using recursion
     b) subsequent patterns
-        [] generate all binary strings
-        [] generate parenthesis
-        [] print all subsequences / powerset
-        [] learn all patterns of subsequences(theory)
-        [] count all subsequences with sum K
+        [X] generate all binary strings
+        [X] generate parenthesis
+        [X] print all subsequences / powerset
+        [X] learn all patterns of subsequences(theory)
+        [X] count all subsequences with sum K
         [] combination sum
         [] combination sum 2
         [] subset sum-1
