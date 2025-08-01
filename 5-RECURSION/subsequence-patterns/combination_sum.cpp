@@ -23,7 +23,6 @@ Explanation: 2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used 
              7 is a candidate, and 7 = 7.
              These are the only two combinations.
 
-
 Example 2:
 
 Input: array = [2], target = 1
@@ -38,6 +37,18 @@ Explaination: No combination is possible.
 
 using namespace std;
 
+vector<vector<int>> res;
+
+void combination(int sum, vector<int> &a, int k, vector<int> c)
+{
+}
+
 int main()
 {
+
+    vector<int> a = {2, 3, 6, 7};
+    int k = 7;
+    vector<int> c;
+
+    combination(0, a, k, c);
 }
