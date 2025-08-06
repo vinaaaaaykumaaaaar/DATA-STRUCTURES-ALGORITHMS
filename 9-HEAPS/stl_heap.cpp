@@ -1,12 +1,16 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <queue>
 using namespace std;
 
 int main()
 {
-    vector<int> v = {1, 2, 3, 4, 5, 6, 7};
-    make_heap(v.begin(), v.end());
 
-    for (auto x : v)
-        cout << x << " ";
-    cout << endl;
+    // Creating a priority queue of integers
+    priority_queue<int> pq;
+    pq.push(9);
+    pq.push(10);
+    pq.push(6);
+
+    cout << pq.top() << " ";
+    return 0;
 }
