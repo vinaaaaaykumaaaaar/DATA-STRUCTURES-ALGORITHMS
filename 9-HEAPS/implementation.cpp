@@ -154,7 +154,7 @@ int main()
     heap.insert(4);
     heap.insert(45);
 
-        cout << "Max Heap array: ";
+    cout << "Max Heap array: ";
     heap.printHeap();
 
     cout << "Extracted max value: " << heap.extractMax()
