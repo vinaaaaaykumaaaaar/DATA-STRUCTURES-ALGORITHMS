@@ -1,5 +1,12 @@
 // A simple and clean C++ template for solving DSA problems in coding interviews.
 
+/**
+ * Copyright (c) 2025 Original Author(s), Vinay Kumar.
+ *
+ * Author: Vinay Kumar <vinaykumar.09032002@gmail.com>
+ *
+ */
+
 #include <iostream>
 #include <set>
 #include <map>
@@ -31,6 +38,9 @@
 #include <type_traits>
 #include <unordered_set>
 #include <unordered_map>
+
+// namespace identifier
+using namespace std;
 
 // limits use
 int minElement = std::numeric_limits<int>::min();
