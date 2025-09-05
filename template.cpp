@@ -46,6 +46,7 @@ using namespace std;
 int minElement = std::numeric_limits<int>::min();
 int maxElement = std::numeric_limits<int>::max();
 
+// leetcode style of solution tracking
 class Solution
 {
 public:
