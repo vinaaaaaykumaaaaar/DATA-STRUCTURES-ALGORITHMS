@@ -13,11 +13,11 @@ Concepts
     Maths for Computer Science
 
 Basic Problems
-    Check Even or Odd
-    Multiplication Table
-    Sum of Naturals
-    Sum of Squares of Naturals
-    Swap Two Numbers
+   [X] Check Even or Odd
+   [X] Multiplication Table
+   [X] Sum of Naturals
+   [X] Sum of Squares of Naturals
+   [X] Swap Two Numbers
     Closest Number
     Dice Problem
     Nth Term of AP
