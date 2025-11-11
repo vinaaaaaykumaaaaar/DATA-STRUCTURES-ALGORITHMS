@@ -34,5 +34,6 @@ int main()
         cout << v[x];
     }
     cout << endl;
-    return 0;
+
+        return 0;
 }
