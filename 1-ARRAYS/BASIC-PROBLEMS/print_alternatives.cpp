@@ -20,6 +20,19 @@ using namespace std;
 
 int main()
 {
-    float a = 10, b = 3, c;
-    cout << a / b << endl;
+    vector<int> v = {10, 20, 30, 40, 50};
+
+    for (auto i = 0; i < v.size(); i++)
+    {
+        if (!(i % 2))
+            cout << v[i] << " ";
+    }
+    cout << endl;
+
+    for (auto x = 0; x < v.size(); x += 2)
+    {
+        cout << v[x];
+    }
+    cout << endl;
+    return 0;
 }
