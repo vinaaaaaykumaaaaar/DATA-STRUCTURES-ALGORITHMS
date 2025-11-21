@@ -38,4 +38,16 @@ void delete_using_erase()
 
 int main()
 {
+	vector<int> values; 
+	values.reserve(1024);
+
+	for(auto i = 0 ; i<1000 ; i++)
+	{
+		values.push_back(i);	
+	}
+
+	for(auto x:values) cout<<x<<" ";
+	cout<<endl;
+
+	return 0;
 }
