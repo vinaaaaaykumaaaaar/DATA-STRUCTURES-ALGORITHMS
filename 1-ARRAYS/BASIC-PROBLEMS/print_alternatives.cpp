@@ -18,7 +18,7 @@ Output: -5 4 12
 
 using namespace std;
 
-int main()
+void brute_force()
 {
     vector<int> v = {10, 20, 30, 40, 50};
 
@@ -34,6 +34,22 @@ int main()
         cout << v[x];
     }
     cout << endl;
+}
 
-        return 0;
+void recursive(int index, vector<int> &arr)
+{
+    if (index > arr.size())
+    {
+        cout << endl;
+        return;
+    }
+    cout << arr[index] << " ";
+
+    recursive(index + 2, arr);
+}
+
+int main()
+{
+
+    return 0;
 }
