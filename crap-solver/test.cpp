@@ -1,22 +1,3 @@
-// A simple and clean C++ template for solving DSA problems in coding interviews.
-
-/**
- * Copyright (c) 2025 Original Author(s), Vinay Kumar.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; version 2 of the License.
- *
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * Author: Vinay Kumar <vinaykumar.09032002@gmail.com>
- *
- */
-
 
 #include <bits/stdc++.h>
 using namespace std;
