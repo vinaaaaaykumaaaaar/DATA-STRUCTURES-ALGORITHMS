@@ -61,16 +61,13 @@ void _print(const vector<T> &v) {
 // ========== CORE SOLUTION STRUCTURE ==========
 
 void solve() {
-    // 1) Read input
-    // 2) Apply logic
-    // 3) Print output
+   int n;
+    cin >> n;
+    vector<int> a(n);
+    for (int i = 0; i < n; ++i) cin >> a[i];
 
-    // Example skeleton:
-    // int n;
-    // cin >> n;
-    // vector<int> a(n);
-    // for (int i = 0; i < n; ++i) cin >> a[i];
-    // debug(a);
+    debug(n);
+    debug(a);
 }
 
 int main() {
