@@ -2,9 +2,9 @@ import os
 import sys
 import subprocess
 
-def delete_exe_files(root_folder):
+def delete_compiled_files(root_folder):
     """
-    Delete all .exe files in the root folder and all its subfolders.
+    Delete all compiled files (.exe and a.out) in the root folder and all its subfolders.
     
     Args:
         root_folder (str): Path to the root folder
@@ -33,8 +33,8 @@ def delete_exe_files(root_folder):
     # Walk through all directories and subdirectories
     for dirpath, dirnames, filenames in os.walk(root_folder):
         for filename in filenames:
-            # Check if file has .exe extension (case-insensitive)
-            if filename.lower().endswith('.exe'):
+            # Check if file has .exe extension (case-insensitive) or is named a.out
+            if filename.lower().endswith('.exe') or filename == 'a.out':
                 file_path = os.path.join(dirpath, filename)
                 
                 # Double-check the file is within the root folder
@@ -50,7 +50,7 @@ def delete_exe_files(root_folder):
                         print(f"Error deleting {file_path}: {e}")
     
     print("-" * 60)
-    print(f"Total .exe files deleted: {deleted_count}")
+    print(f"Total compiled files deleted: {deleted_count}")
     
     return deleted_count, deleted_files
 
@@ -125,13 +125,13 @@ def main():
         root_folder = os.path.dirname(os.path.abspath(__file__))
         print(f"No folder specified. Using script directory: {root_folder}")
     
-    # Delete .exe files (no confirmation needed for automated workflow)
-    deleted_count, deleted_files = delete_exe_files(root_folder)
+    # Delete compiled files (no confirmation needed for automated workflow)
+    deleted_count, deleted_files = delete_compiled_files(root_folder)
     
     if deleted_count > 0:
-        print(f"\n✓ Cleaned up {deleted_count} .exe file(s)")
+        print(f"\n✓ Cleaned up {deleted_count} compiled file(s)")
     else:
-        print("\n✓ No .exe files found")
+        print("\n✓ No compiled files (.exe or a.out) found")
     
     # Run git commands
     run_git_commands(root_folder)
