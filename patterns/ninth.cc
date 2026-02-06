@@ -3,22 +3,23 @@ using namespace std;
 
 int main()
 {
-    int count = 5;
-
-    for (auto i = 1; i <= count; i++)
+    int n = 5;
+    
+    // Upper half (including middle)
+    for (int i = 1; i <= n; i++)
     {
-        for(auto j=0; j<= count-i;j++) cout<<" ";
-        for(auto j = 0 ; j< i*2 -1 ; j++ ) cout<<"*";
-        cout<<endl;
+        for(int j = 1; j <= n - i; j++) cout << " ";
+        for(int j = 1; j <= 2*i - 1; j++) cout << "*";
+        cout << endl;
     }
     
-    for (auto i = count; i >= 1; i--)
+    // Lower half (excluding middle)
+    for (int i = n - 1; i >= 1; i--)
     {
-         for(auto j=0; j<= count-i;j++) cout<<" ";
-        for (auto j = 0; j < i*2 -1; j++) cout<<"*";
-        cout<<endl;
-        
+        for(int j = 1; j <= n - i; j++) cout << " ";
+        for(int j = 1; j <= 2*i - 1; j++) cout << "*";
+        cout << endl;
     }
     
-    
+    return 0;
 }
