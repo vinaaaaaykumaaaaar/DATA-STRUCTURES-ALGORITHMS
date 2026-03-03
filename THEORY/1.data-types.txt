@@ -1,0 +1,32 @@
+Data Types & Variables in C++
+
+Table of Contents
+
+1. Introduction to Variables
+2.  Fundamental Data Types
+3. Derived Data Types
+4. Type Modifiers
+5. Type Conversion and Casting
+6. Constants and Literals
+7. Best Practices for DSA
+
+----------------------------------------------------------------------------------------------------------
+
+1. Introduction to Variables
+
+A variable is a named storage location in memory that holds a value. In C++, every variable must be declared with a specific data type before use.
+
+Syntax: data_type variable_name = initial_value;
+
+Key Properties:
+
+* Variables have a name (identifier), type, value, and memory address
+* The data type determines how much memory is allocated and how the data is interpreted
+* Variable names must start with a letter or underscore, followed by letters, digits, or underscores
+* C++ is case-sensitive (count and Count are different variables)
+
+----------------------------------------------------------------------------------------------------------
+
+2. Fundamental Data Types
+
+
