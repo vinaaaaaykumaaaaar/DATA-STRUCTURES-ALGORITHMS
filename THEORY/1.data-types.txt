@@ -3,7 +3,7 @@ Data Types & Variables in C++
 Table of Contents
 
 1. Introduction to Variables
-2.  Fundamental Data Types
+2. Fundamental Data Types
 3. Derived Data Types
 4. Type Modifiers
 5. Type Conversion and Casting
@@ -29,4 +29,45 @@ Key Properties:
 
 2. Fundamental Data Types
 
+Fundamental (or primitive) data types are the building blocks of all data in C++. The sizes below are typical for most 64-bit systems, though the C++ standard only guarantees minimum sizes.
 
+2.1 Integer Types
+
+Used to store whole numbers (no decimal point).
+
+int x = 42;           // Most common integer type, typically 4 bytes
+short s = 100;        // At least 2 bytes
+long l = 100000L;     // At least 4 bytes
+long long ll = 9999999999LL;  // At least 8 bytes
+
+2.2 Floating-Point Types
+
+Used to store numbers with decimal points (real numbers).
+
+float f = 3.14f;         // ~6-7 significant digits, 4 bytes
+double d = 3.14159265;   // ~15-16 significant digits, 8 bytes
+long double ld = 3.14L;  // Extended precision, typically 16 bytes
+
+2.3 Character Type
+
+Used to store a single character, encoded as an integer (ASCII value).
+
+char c = 'A';     // Stores the ASCII value 65
+char digit = '7'; // Stores ASCII 55, NOT the integer 7
+
+2.4 Boolean Type
+
+Used to store a truth value.
+
+bool isValid = true;
+bool isEmpty = false;
+
+2.5 The void Type
+
+void is a special type that represents the absence of a value. It cannot be used for regular variables but appears in two important contexts: functions that return nothing (void doSomething()) and generic pointers (void*).
+
+----------------------------------------------------------------------------------------------------------
+
+3.  Derived Data Types
+
+Derived types are built from fundamental types and give you the ability to work with collections and references.
