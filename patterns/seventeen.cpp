@@ -5,6 +5,17 @@ QUESTION : Pattern 17
 SAMPLE INPUT :
 EXPECTED ANSWER :
 
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********
+
 */
 
 #include <iostream>
