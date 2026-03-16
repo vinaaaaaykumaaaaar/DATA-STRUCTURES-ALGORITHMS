@@ -28,9 +28,6 @@ public:
     void solFunction(int n)
     {
         int i = 1;
-
-
-        
         while(i<11)
         {
             cout << n << " * " << i << " = " << n * i << endl;
