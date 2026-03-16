@@ -22,31 +22,30 @@ void _debug_print(T t, Args... args)
 
 // solution class
 
-class Solution 
+class Solution
 {
-    public :
-        int solFunction()
-        {
-
-        }
+public:
+    string solFunction(int n)
+    {
+        if (n%2 == 0)
+            return "even";
+        else
+            return "odd";
+    }
 };
 
-// main function 
+// main function
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
     Solution sol;
 
-        int T = 1;
-    // cin >> T;
-        int input;
+    int number;
+    cin >> number;
 
-        while (T--)
-        {
-            cin >> input;
-            cout << sol.solFunction() << endl;
-        }
+    cout << sol.solFunction(number) << endl;
+
+    cin >> number;
+
+    cout << sol.solFunction(number) << endl;
 }
