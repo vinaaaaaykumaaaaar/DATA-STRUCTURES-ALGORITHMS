@@ -128,7 +128,7 @@ void _debug_print(T t, Args... args)
 class Solution
 {
 public:
-    int findMax(vector<int> &nums)
+    int Sol(vector<int> &nums)
     {
         int maxVal = 0;
 
@@ -152,7 +152,7 @@ int main()
     Solution sol;
 
     vector<int> nums = {3, 7, 2, 9, 1};
-    int result = sol.findMax(nums);
+    int result = sol.Sol(nums);
     cout << "Answer: " << result << " (Expected: 9)\n";
 
     cout << "--------------------------" << endl;
