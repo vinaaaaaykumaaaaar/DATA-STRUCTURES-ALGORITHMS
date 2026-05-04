@@ -1,14 +1,17 @@
 #include <iostream>
 
-long long factorial(int n)
+using namespace std;
+
+int factorial (int n)
 {
-    if (n <= 1)
-        return 1;                // base case
-    return n * factorial(n - 1); // recursive case
+    if (n<=1) return 1;
+
+    return n * factorial(n-1);
 }
 
 int main()
 {
-    int n = 5;
-    std::cout << n << "! = " << factorial(n) << "\n";
+
+    cout<<factorial(3)<<endl;
+    return 0;
 }
