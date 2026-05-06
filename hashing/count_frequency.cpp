@@ -14,6 +14,7 @@ int main()
         hash_array[arr[i]]++;
     }
 
+    // Pre-computation
     for (int i = 0; i < hash_array.size(); i++)
     {
         /* code */
@@ -29,6 +30,7 @@ int main()
         int number;
         cin >> number;
 
+        // fetching
         cout << "Number " << number << " freq is " << hash_array[number] << endl;
     }
 }
