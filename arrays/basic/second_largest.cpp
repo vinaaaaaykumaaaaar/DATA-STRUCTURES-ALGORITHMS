@@ -44,7 +44,7 @@ int main()
             second = first;
             first = arr[i];
         }
-        else if (second < arr[i] && first > arr[i])
+        else if (second < arr[i] && first != arr[i])
         {
             second = arr[i];
         }
