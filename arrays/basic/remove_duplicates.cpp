@@ -22,7 +22,7 @@ void _debug_print(T t, Args... args)
 
 int main()
 {
-    vector<int> a = {1, 2, 3};
+    vector<int> a = {1, 2, 2, 3, 4, 4, 4, 5, 5};
     int j = 0;
 
     for (int i = 1; i < a.size(); i++)
@@ -35,9 +35,10 @@ int main()
         }
     }
 
-    a.erase(a.begin() + j + 1, a.end());
+    for (int i = 0; i <= j; i++)
+    {
+        cout << a[i] << " ";
+    }
 
-    for (auto x : a)
-        cout << x << " ";
     return 0;
 }
