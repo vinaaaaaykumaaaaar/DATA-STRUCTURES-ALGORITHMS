@@ -22,16 +22,14 @@ void _debug_print(T t, Args... args)
 
 // solution class
 
-class Solution 
+class Solution
 {
-    public :
-        int solFunction()
-        {
-
-        }
+public:
+    vector<int> optimal(vector<int> &arr)
+    {
+    }
 };
-
-// main function 
+// main function
 
 int main()
 {
@@ -40,13 +38,16 @@ int main()
 
     Solution sol;
 
-        int T = 1;
-    // cin >> T;
-        int input;
+    // int T = 1;
+    // // cin >> T;
+    // int input;
 
-        while (T--)
-        {
-            cin >> input;
-            cout << sol.solFunction() << endl;
-        }
+    vector<int> arr = {17, 18, 5, 4, 6, 1};
+
+    vector<int> res = sol.optimal(arr);
+
+    for (auto x : res)
+        cout << x << " ";
+
+    return 0;
 }
