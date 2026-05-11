@@ -19,8 +19,33 @@ Explanation: 5 is greater than all the elements to its right i.e., [2], therefor
 #include <iostream>
 #include <vector>
 #include <set>
+#include <algorithm>
 
 using namespace std;
+
+void optimal(vector<int> &arr)
+{
+    vector<int> result;
+
+    int max = arr[arr.size() - 1];
+
+    result.push_back(max);
+
+    for (int i = arr.size() - 2; i >= 0; i--)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+            result.push_back(max);
+        }
+    }
+
+    reverse(result.begin(), result.end());
+
+    for (auto x : result)
+        cout << x << " ";
+    cout << "\n";
+}
 
 int main()
 {
@@ -46,6 +71,8 @@ int main()
     }
 
     cout << endl;
+
+    optimal(arr);
 
     return 0;
 }
