@@ -29,25 +29,43 @@ class Node
         }
 };
 
+
+class LinkedList_Operation
+{
+    public : 
+        // Function to insert at the head position
+        Node* insert_at_head(Node* head , int data1)
+        {
+            Node* new_node = new Node(data1 , head);
+            return new_node;
+        }
+
+        // Print all the nodes
+        void print_list(Node* head) {
+            Node* temp = head;
+            while (temp != nullptr) {
+                cout << temp->data << " ";
+                temp = temp->next;
+            }
+            cout << endl;
+        }
+};
+
 int main()
 {
   
-    Node* C = new Node(3);
-    Node* B = new Node(2,C);
-    Node* A = new Node(1,B);
+    Node* head = new Node(2);
+    head->next = new Node(3);
 
+    LinkedList_Operation link;
 
+    cout<<"Original List : ";
+    link.print_list(head);
 
-    cout<<A->data<<" "<<A->next<<endl;
-    cout<<B->data<<" "<<B->next<<endl;
-    cout<<C->data<<" "<<C->next<<endl;
+    head = link.insert_at_head(head , 1);
 
-    Node* head = new Node(0 , A); 
-
-    cout<<head->data<<" "<<head->next<<endl;
-    cout<<A->data<<" "<<A->next<<endl;
-    cout<<B->data<<" "<<B->next<<endl;
-    cout<<C->data<<" "<<C->next<<endl;
+    cout<<"Modified List : ";
+    link.print_list(head);
 
     return 0;
 }
