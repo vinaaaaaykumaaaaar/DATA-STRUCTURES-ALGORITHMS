@@ -31,10 +31,10 @@ using namespace std;
 
 int main()
 {
-    vector<int> arr = {3,2,4};
+    vector<int> arr = {-8, 1, 4, 6, 10, 45};
     sort(arr.begin() , arr.end());
 
-    int target = 6;
+    int target = 16;
 
     int a = -1 , b = -1;
 
