@@ -2,139 +2,189 @@ import os
 import sys
 import subprocess
 
-def delete_compiled_files(root_folder):
+
+def run_git(args, root):
+    """Run a git command in `root` and return the CompletedProcess."""
+    return subprocess.run(['git'] + args, cwd=root, capture_output=True, text=True)
+
+
+def is_build_file(path):
+    """True for compiled artifacts we never want to commit (.exe, a.out)."""
+    name = os.path.basename(path)
+    return name.lower().endswith('.exe') or name == 'a.out'
+
+
+def list_changes(root):
+    """Return a list of (status, path) tuples from `git status --porcelain`."""
+    result = run_git(['status', '--porcelain'], root)
+    if result.returncode != 0:
+        print(f"Error reading git status: {result.stderr.strip()}")
+        return None
+
+    changes = []
+    for line in result.stdout.splitlines():
+        if not line.strip():
+            continue
+        status = line[:2]
+        rest = line[3:]
+        # Renames/copies are shown as "old -> new"; keep the new path.
+        if ' -> ' in rest:
+            rest = rest.split(' -> ', 1)[1]
+        path = rest.strip().strip('"')
+        changes.append((status, path))
+    return changes
+
+
+def print_changes(changes, title):
+    print("\n" + "=" * 60)
+    print(title)
+    print("=" * 60)
+    if not changes:
+        print("  (no changes)")
+        return
+    for status, path in changes:
+        marker = "   <-- build file" if is_build_file(path) else ""
+        print(f"  {status}  {path}{marker}")
+    print(f"\n  Total: {len(changes)} change(s)")
+
+
+def delete_build_files(root):
     """
-    Delete all compiled files (.exe and a.out) in the root folder and all its subfolders.
-    
-    Args:
-        root_folder (str): Path to the root folder
-    
-    Returns:
-        tuple: (count of deleted files, list of deleted file paths)
+    Delete all .exe / a.out files on disk (scans the whole tree, skipping .git).
+
+    Untracked build files simply disappear; tracked ones become a pending
+    deletion that the per-file commit step will record in the repo.
     """
-    # Verify the root folder exists
-    if not os.path.exists(root_folder):
-        print(f"Error: The folder '{root_folder}' does not exist.")
-        return 0, []
-    
-    if not os.path.isdir(root_folder):
-        print(f"Error: '{root_folder}' is not a directory.")
-        return 0, []
-    
-    # Convert to absolute path for safety
-    root_folder = os.path.abspath(root_folder)
-    
-    deleted_files = []
-    deleted_count = 0
-    
-    print(f"Scanning folder: {root_folder}")
-    print("-" * 60)
-    
-    # Walk through all directories and subdirectories
-    for dirpath, dirnames, filenames in os.walk(root_folder):
+    print("\n" + "=" * 60)
+    print("Removing build files (.exe, a.out)")
+    print("=" * 60)
+
+    deleted = []
+    for dirpath, dirnames, filenames in os.walk(root):
+        if '.git' in dirnames:
+            dirnames.remove('.git')  # never descend into the git internals
         for filename in filenames:
-            # Check if file has .exe extension (case-insensitive) or is named a.out
             if filename.lower().endswith('.exe') or filename == 'a.out':
                 file_path = os.path.join(dirpath, filename)
-                
-                # Double-check the file is within the root folder
-                if os.path.abspath(file_path).startswith(root_folder):
-                    try:
-                        os.remove(file_path)
-                        deleted_files.append(file_path)
-                        deleted_count += 1
-                        print(f"Deleted: {file_path}")
-                    except PermissionError:
-                        print(f"Permission denied: {file_path}")
-                    except Exception as e:
-                        print(f"Error deleting {file_path}: {e}")
-    
-    print("-" * 60)
-    print(f"Total compiled files deleted: {deleted_count}")
-    
-    return deleted_count, deleted_files
+                try:
+                    os.remove(file_path)
+                    deleted.append(file_path)
+                    print(f"  deleted: {os.path.relpath(file_path, root)}")
+                except FileNotFoundError:
+                    pass
+                except PermissionError:
+                    print(f"  permission denied: {file_path}")
+                except Exception as e:
+                    print(f"  error deleting {file_path}: {e}")
+
+    if not deleted:
+        print("  (none found)")
+    print(f"\n  Removed {len(deleted)} build file(s)")
+    return deleted
 
 
-def run_git_commands(root_folder, commit_message="solved"):
-    """
-    Run git commands to add, commit, and push changes.
-    
-    Args:
-        root_folder (str): Path to the git repository
-        commit_message (str): Commit message to use
-    """
-    try:
-        # Change to the repository directory
-        os.chdir(root_folder)
-        
-        print("\n" + "=" * 60)
-        print("Running Git Commands")
-        print("=" * 60)
-        
-        # Git add
-        print("\n[1/3] Running: git add .")
-        result = subprocess.run(['git', 'add', '.'], capture_output=True, text=True)
-        if result.returncode != 0:
-            print(f"Error: {result.stderr}")
-            return False
-        print("✓ Files staged successfully")
-        
-        # Git commit
-        print(f"\n[2/3] Running: git commit -m \"{commit_message}\"")
-        result = subprocess.run(['git', 'commit', '-m', commit_message], capture_output=True, text=True)
-        if result.returncode != 0:
-            # Check if there's nothing to commit
-            if "nothing to commit" in result.stdout or "nothing to commit" in result.stderr:
-                print("✓ No changes to commit")
+def commit_message_for(status, path):
+    """Pick a meaningful commit message based on the change type."""
+    s = status.strip()
+    if 'R' in s:
+        return f"rename: {path}"
+    if 'D' in s:
+        return f"remove: {path}"
+    return f"solved: {path}"
+
+
+def commit_and_push_each(root, changes):
+    """Stage, commit, and push every change individually."""
+    pushed = 0
+    failed = []
+
+    for status, path in changes:
+        print("\n" + "-" * 60)
+        print(f"Processing [{status}] {path}")
+
+        # Stage just this path (-A captures adds, edits, and deletions).
+        add = run_git(['add', '-A', '--', path], root)
+        if add.returncode != 0:
+            print(f"  stage failed: {add.stderr.strip()}")
+            failed.append(path)
+            continue
+
+        message = commit_message_for(status, path)
+        commit = run_git(['commit', '-m', message], root)
+        if commit.returncode != 0:
+            combined = commit.stdout + commit.stderr
+            if 'nothing to commit' in combined:
+                print("  nothing to commit (skipped)")
             else:
-                print(f"Error: {result.stderr}")
-                return False
-        else:
-            print("✓ Changes committed successfully")
-            print(result.stdout.strip())
-        
-        # Git push
-        print("\n[3/3] Running: git push")
-        result = subprocess.run(['git', 'push'], capture_output=True, text=True)
-        if result.returncode != 0:
-            print(f"Error: {result.stderr}")
-            return False
-        print("✓ Changes pushed successfully")
-        print(result.stdout.strip())
-        
-        print("\n" + "=" * 60)
-        print("All Git operations completed successfully!")
-        print("=" * 60)
-        return True
-        
-    except FileNotFoundError:
-        print("Error: Git is not installed or not in PATH")
-        return False
-    except Exception as e:
-        print(f"Error running git commands: {e}")
-        return False
+                print(f"  commit failed: {commit.stderr.strip()}")
+                failed.append(path)
+            continue
+        print(f"  committed: {message}")
+
+        push = run_git(['push'], root)
+        if push.returncode != 0:
+            print(f"  push failed: {push.stderr.strip()}")
+            failed.append(path)
+            continue
+        print("  pushed")
+        pushed += 1
+
+    return pushed, failed
 
 
 def main():
-    """Main function to run the script."""
-    # Get the root folder from command line argument or current directory
+    """Cleanup compiled files, then commit + push each change individually."""
     if len(sys.argv) > 1:
-        root_folder = sys.argv[1]
+        root = os.path.abspath(sys.argv[1])
     else:
-        # Use the directory where the script is located
-        root_folder = os.path.dirname(os.path.abspath(__file__))
-        print(f"No folder specified. Using script directory: {root_folder}")
-    
-    # Delete compiled files (no confirmation needed for automated workflow)
-    deleted_count, deleted_files = delete_compiled_files(root_folder)
-    
-    if deleted_count > 0:
-        print(f"\n✓ Cleaned up {deleted_count} compiled file(s)")
-    else:
-        print("\n✓ No compiled files (.exe or a.out) found")
-    
-    # Run git commands
-    run_git_commands(root_folder)
+        root = os.path.dirname(os.path.abspath(__file__))
+        print(f"No folder specified. Using script directory: {root}")
+
+    if not os.path.isdir(root):
+        print(f"Error: '{root}' is not a directory.")
+        sys.exit(1)
+
+    check = run_git(['rev-parse', '--is-inside-work-tree'], root)
+    if check.returncode != 0:
+        print(f"Error: '{root}' is not a git repository.")
+        sys.exit(1)
+
+    # 1) List all current changes (build files are flagged).
+    changes = list_changes(root)
+    if changes is None:
+        sys.exit(1)
+    print_changes(changes, "Step 1: All current changes")
+
+    if not changes:
+        print("\nWorking tree is clean. Nothing to do.")
+        return
+
+    # 2 & 3) Detect and remove build files.
+    delete_build_files(root)
+
+    # 4) Re-list the changes after cleanup.
+    changes = list_changes(root)
+    if changes is None:
+        sys.exit(1)
+    print_changes(changes, "Step 2: Changes after build-file cleanup")
+
+    if not changes:
+        print("\nNo changes left to commit after cleanup.")
+        return
+
+    # 5) Add / commit / push each file individually.
+    print("\n" + "=" * 60)
+    print("Step 3: Commit & push each file individually")
+    print("=" * 60)
+    pushed, failed = commit_and_push_each(root, changes)
+
+    print("\n" + "=" * 60)
+    print(f"Done. {pushed} file(s) committed and pushed.")
+    if failed:
+        print(f"{len(failed)} file(s) had issues:")
+        for f in failed:
+            print(f"  - {f}")
+    print("=" * 60)
 
 
 if __name__ == "__main__":
