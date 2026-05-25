@@ -3,9 +3,19 @@ import sys
 import subprocess
 
 
+# Directories whose changes should never be committed or pushed.
+IGNORED_DIRS = {'.vscode', '.claude', '.git', '__pycache__', '.idea'}
+
+
 def run_git(args, root):
     """Run a git command in `root` and return the CompletedProcess."""
     return subprocess.run(['git'] + args, cwd=root, capture_output=True, text=True)
+
+
+def is_ignored(path):
+    """True if any component of `path` is an ignored directory."""
+    parts = path.replace('\\', '/').split('/')
+    return any(part in IGNORED_DIRS for part in parts)
 
 
 def is_build_file(path):
@@ -31,6 +41,8 @@ def list_changes(root):
         if ' -> ' in rest:
             rest = rest.split(' -> ', 1)[1]
         path = rest.strip().strip('"')
+        if is_ignored(path):
+            continue
         changes.append((status, path))
     return changes
 
@@ -61,8 +73,8 @@ def delete_build_files(root):
 
     deleted = []
     for dirpath, dirnames, filenames in os.walk(root):
-        if '.git' in dirnames:
-            dirnames.remove('.git')  # never descend into the git internals
+        # Don't descend into ignored dirs (git internals, editor config, etc).
+        dirnames[:] = [d for d in dirnames if d not in IGNORED_DIRS]
         for filename in filenames:
             if filename.lower().endswith('.exe') or filename == 'a.out':
                 file_path = os.path.join(dirpath, filename)
