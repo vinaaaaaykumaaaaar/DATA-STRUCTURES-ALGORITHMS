@@ -56,6 +56,28 @@ public:
 
         return count;
     }
+
+    int triangleNumberOptimize(vector<int> nums)
+    {
+        int count = 0;
+
+        sort(nums.begin(), nums.end());
+
+        int n = nums.size();
+
+        for (int i = 0; i < n - 2; i++)
+        {
+            int left = i + 1, right = n - 1;
+
+            while (left < right)
+            {
+                if (nums[left] + nums[right] > i)
+                    count++;
+                else if (nums[left] + nums[right] < i)
+                    --right;
+            }
+        }
+    }
 };
 
 int main()
