@@ -60,23 +60,27 @@ public:
     int triangleNumberOptimize(vector<int> nums)
     {
         int count = 0;
+        int n = nums.size();
 
         sort(nums.begin(), nums.end());
 
-        int n = nums.size();
-
-        for (int i = 0; i < n - 2; i++)
+        for (int i = n - 1; i >= 2; --i)
         {
-            int left = i + 1, right = n - 1;
+            int left = 0, right = i - 1;
 
             while (left < right)
             {
-                if (nums[left] + nums[right] > i)
-                    count++;
-                else if (nums[left] + nums[right] < i)
-                    --right;
+                if (nums[left] + nums[right] > nums[i])
+                {
+                    count += right - left;
+                    right--;
+                }
+
+                else
+                    left++;
             }
         }
+        return count;
     }
 };
 
@@ -86,5 +90,5 @@ int main()
 
     Solution sol;
 
-    cout << sol.triangleNumber(nums) << endl;
+    cout << sol.triangleNumberOptimize(nums) << endl;
 }
