@@ -14,13 +14,12 @@ public:
 
 int main()
 {
-    int x = 42;
+    int n = 10;
+
     int *p;
-    cout << *p << endl;
+    p = &n;
 
-    Node *temp = new Node();
-
-    cout << temp->data << endl;
+    cout << *(&n) << endl;
 
     return 0;
 }
