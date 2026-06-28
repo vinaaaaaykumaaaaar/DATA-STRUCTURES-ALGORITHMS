@@ -1,7 +1,9 @@
-"""Stage, commit, and push each working-tree change individually.
+"""Stage, commit, and push working-tree changes.
 
 Build artifacts (.exe, a.out) are wiped from disk first so they never enter
-history. Anything under editor or git-internal directories is skipped.
+history. All file deletions (including any tracked build artifacts) are then
+grouped into a single commit, while every other change is committed and pushed
+individually. Anything under editor or git-internal directories is skipped.
 """
 
 from __future__ import annotations
@@ -154,6 +156,54 @@ def commit_message_for(change: Change) -> str:
     return f"{DEFAULT_PREFIX}: {change.path}"
 
 
+def commit_deletions_together(
+    root: Path, deletions: list[Change]
+) -> tuple[int, list[str]]:
+    """Stage every deletion and commit them as one, then push.
+
+    Returns (files_pushed, failed_paths). All `D`-status paths (tracked file
+    removals, including any committed build artifacts) land in a single commit.
+    """
+    if not deletions:
+        return 0, []
+
+    print(f"\n{SUBSEPARATOR}\nGrouping {len(deletions)} deletion(s) into one commit")
+
+    staged: list[str] = []
+    failed: list[str] = []
+    for change in deletions:
+        # -A captures the deletion for this exact path.
+        add = run_git(['add', '-A', '--', change.path], root)
+        if add.returncode != 0:
+            print(f"  stage failed: {change.path}: {add.stderr.strip()}")
+            failed.append(change.path)
+        else:
+            staged.append(change.path)
+            print(f"  staged: {change.path}")
+
+    if not staged:
+        print("  nothing staged; skipping commit")
+        return 0, failed
+
+    summary = f"remove: {len(staged)} deleted file(s) and build artifacts"
+    body = "\n".join(f"- {path}" for path in staged)
+    commit = run_git(['commit', '-m', summary, '-m', body], root)
+    if commit.returncode != 0:
+        if 'nothing to commit' in (commit.stdout + commit.stderr):
+            print("  nothing to commit (skipped)")
+            return 0, failed
+        print(f"  commit failed: {commit.stderr.strip()}")
+        return 0, failed + staged
+    print(f"  committed: {summary}")
+
+    push = run_git(['push'], root)
+    if push.returncode != 0:
+        print(f"  push failed: {push.stderr.strip()}")
+        return 0, failed + staged
+    print("  pushed")
+    return len(staged), failed
+
+
 def commit_and_push_each(root: Path, changes: list[Change]) -> tuple[int, list[str]]:
     """Stage, commit, and push every change individually."""
     pushed = 0
@@ -241,10 +291,17 @@ def main() -> int:
         print("\nNo changes left to commit after cleanup.")
         return 0
 
-    # 4) Commit and push each change individually.
-    print_section("Step 3: Commit & push each file individually")
-    pushed, failed = commit_and_push_each(root, changes)
-    print_summary(pushed, failed)
+    # 4) Group all deletions into a single commit; commit the rest one by one.
+    deletions = [c for c in changes if 'D' in c.status]
+    others = [c for c in changes if 'D' not in c.status]
+
+    print_section("Step 3: Commit & push all deleted files together")
+    del_pushed, del_failed = commit_deletions_together(root, deletions)
+
+    print_section("Step 4: Commit & push each remaining file individually")
+    ind_pushed, ind_failed = commit_and_push_each(root, others)
+
+    print_summary(del_pushed + ind_pushed, del_failed + ind_failed)
     return 0
 
 
