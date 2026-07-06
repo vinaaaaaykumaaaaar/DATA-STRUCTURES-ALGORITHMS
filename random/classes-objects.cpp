@@ -7,6 +7,11 @@ class Counter
 public:
     int count;
 
+    Counter()
+    {
+        count = 10;
+    }
+
     void increment()
     {
         count++;
@@ -22,9 +27,9 @@ int main()
 {
 
     Counter c;
-    c.count = 0;
-    c.increment();
-    cout << c.get() << endl;
 
+    c.increment();
+    c.increment();
+    cout << c.get();
     return 0;
 }
