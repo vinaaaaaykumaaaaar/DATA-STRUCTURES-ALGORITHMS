@@ -21,17 +21,21 @@ int removeDuplicates(vector<int> &v)
     if (v.empty())
         return 0;
 
-    int i = 0;
-    for (int j = 1; j < v.size(); j++)
-        if (v[i] != v[j])
-            v[++i] = v[j];
+    int j = 0;
+    for (size_t i = 1; i < v.size() - 1; i++)
+    {
+        if (v[j] != v[i] && j != i && j != i + 1)
+        {
+            swap(v[++j], v[i]);
+        }
+    }
 
-    return i + 1;
+    return j + 1;
 }
 
 int main()
 {
-    vector<int> v = {1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4};
+    vector<int> v = {1, 1, 2, 2, 2, 3, 3};
 
     int size = removeDuplicates(v);
 
