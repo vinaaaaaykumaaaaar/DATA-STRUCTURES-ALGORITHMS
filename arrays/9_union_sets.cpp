@@ -29,8 +29,8 @@ using namespace std;
 
 int main()
 {
-    vector<int> a = {1, 2, 3, 4, 5};
-    vector<int> b = {2, 3, 4, 4, 5, 6};
+    vector<int> a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    vector<int> b = {2, 3, 4, 4, 5, 11, 12};
     vector<int> v;
 
     int i = 0, j = 0;
@@ -39,21 +39,47 @@ int main()
     {
         if (a[i] < b[j])
         {
-            v.push_back(a[i]);
-            v.push_back(b[j]);
-            i++, j++;
+            if (v.empty() || v.back() != a[i])
+            {
+                v.push_back(a[i]);
+            }
+            i++;
         }
-        else if (a[i] > b[j])
+        else if (b[j] < a[i])
         {
-            v.push_back(b[j]);
-            v.push_back(a[i]);
-            i++, j++;
+            if (v.empty() || v.back() != b[j])
+            {
+                v.push_back(b[j]);
+            }
+            j++;
         }
         else
         {
-            v.push_back(a[i]);
-            i++, j++;
+            if (v.empty() || v.back() != a[i])
+            {
+                v.push_back(a[i]);
+            }
+            i++;
+            j++;
         }
+    }
+
+    while (i < a.size())
+    {
+        if (v.empty() || v.back() != a[i])
+        {
+            v.push_back(a[i]);
+        }
+        i++;
+    }
+
+    while (j < b.size())
+    {
+        if (v.empty() || v.back() != b[j])
+        {
+            v.push_back(b[j]);
+        }
+        j++;
     }
 
     for (auto x : v)
