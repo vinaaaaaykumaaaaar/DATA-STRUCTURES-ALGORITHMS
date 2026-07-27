@@ -26,28 +26,16 @@ using namespace std;
 
 int main()
 {
-    vector<int> v = {10, 5, 2, 7, 1, 9};
-    int k = 15;
-    int n = v.size();
+    vector<int> a = {-3, 2, 1};
+    int k = 3;
+    int n = a.size();
     int maximum = 0;
 
-    for (int i = 0; i < n; i++)
-    {
-        int sum = 0;
-        for (int j = i; j < n; j++)
-        {
-            sum = sum + v[j];
-            if (sum == k)
-            {
-                maximum = max(maximum, j - i + 1);
-            }
-            // only if all numbers are positive
-            else if (sum > k)
-            {
-                break;
-            }
-        }
-    }
+    vector<int> p;
+    p[0] = 0;
 
-    cout << maximum << endl; // 4
+    for (int i = 1; i < n; i++)
+    {
+        p[i] = p[i - 1] + a[i];
+    }
 }
