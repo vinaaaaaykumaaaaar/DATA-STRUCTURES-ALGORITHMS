@@ -2,21 +2,20 @@
 
 using namespace std;
 
-int binary_search(const vector<int> &nums, int target)
+int binary_search(const vector<int> &nums, int target_element)
 {
-    if (nums.empty())
-        return -1;
+    int n = nums.size();
+    int left = 0, right = n - 1;
 
-    int l = 0, r = (int)nums.size() - 1;
-    while (l <= r)
+    while (left <= right)
     {
-        int m = l + (r - l) / 2;
-        if (nums[m] == target)
-            return m;
-        if (nums[m] < target)
-            l = m + 1;
+        int mid = left + (right - left) / 2;
+        if (nums[mid] == target_element)
+            return mid;
+        if (nums[mid] > target_element)
+            right = mid - 1;
         else
-            r = m - 1;
+            left = mid + 1;
     }
 
     return -1;
@@ -27,7 +26,10 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    vector<int> a = {-10, -3, 0, 5, 9, 12, 19};
-    cout << binary_search(a, 20) << "\n";
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int target_element = 7;
+
+    cout << binary_search(arr, target_element) << "\n";
+
     return 0;
 }
