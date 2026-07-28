@@ -3,9 +3,11 @@ using namespace std;
 
 struct Node
 {
+public:
     int data;
     Node *next;
-    Node(int val) : data(val), next(nullptr) {}
+
+    Node(int value) : data(value), next(nullptr) {}
 };
 
 class LinkedList
@@ -13,11 +15,10 @@ class LinkedList
 private:
     Node *head;
     Node *tail;
-    int sz;
+    int size;
 
 public:
-    LinkedList() : head(nullptr), tail(nullptr), sz(0) {}
-
+    LinkedList() : head(nullptr), tail(nullptr), size(0) {}
     ~LinkedList() { clear(); }
 
     void clear()
@@ -29,51 +30,61 @@ public:
             delete temp;
         }
         tail = nullptr;
-        sz = 0;
+        size = 0;
     }
 
-    void insertAtBeginning(int val)
+    // TC -> O(1)
+    int get_size()
     {
-        Node *newNode = new Node(val);
+        return size;
+    }
+
+    // Display -> TC -> O(n);
+    void display()
+    {
+        Node *temp = head;
+        if (!head)
+        {
+            cout << "Linked list is empty" << "\n";
+            return;
+        }
+        while (temp)
+        {
+            cout << temp->data << "->";
+            temp = temp->next;
+        }
+        cout << "NULL\n";
+    }
+
+    // TC -> O(n)
+    Node *get_head()
+    {
+        return head;
+    }
+
+    void insert_at_head(int value)
+    {
+        Node *newNode = new Node(value);
         newNode->next = head;
         head = newNode;
         if (!tail)
             tail = head;
-        sz++;
+        size++;
     }
 
-    void deleteAtBeginning()
+    void insert_at_end(int value)
     {
+        Node *newNode = new Node(value);
         if (!head)
-            return;
-        Node *temp = head;
-        head = head->next;
-
-        delete temp;
-        sz--;
-
-        if (!head)
-            tail = nullptr;
-    }
-
-    int findLenght()
-    {
-        if (!head)
-            return 0;
-        Node *curr = head;
-        int count = 0;
-        while (curr)
         {
-            count++;
-            curr = curr->next;
+            head = tail = newNode;
         }
-
-        return count;
-    }
-
-    int size()
-    {
-        return sz;
+        else
+        {
+            tail->next = newNode;
+            tail = newNode;
+        }
+        size++;
     }
 };
 
@@ -83,13 +94,14 @@ int main()
     cin.tie(nullptr);
 
     LinkedList ll;
-    ll.insertAtBeginning(10);
-    ll.insertAtBeginning(20);
-    ll.insertAtBeginning(30);
+    cout << ll.get_size() << "\n";
+    ll.display();
+    ll.insert_at_head(10);
+    ll.display();
+    ll.insert_at_head(20);
+    ll.display();
+    ll.insert_at_end(5);
+    ll.display();
 
-    cout << ll.size() << "\n";
-    ll.deleteAtBeginning();
-    cout << ll.size() << "\n";
-
-    cout << ll.findLenght() << "\n";
+    return 0;
 }
