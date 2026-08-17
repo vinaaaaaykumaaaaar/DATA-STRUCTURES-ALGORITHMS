@@ -6,7 +6,7 @@ using namespace std;
 
 int max_sum(vector<int> &arr, int k)
 {
-    int max_sum = -3454345;
+    int max_sum = -33544564;
     int window_sum = 0;
     int start = 0;
 
