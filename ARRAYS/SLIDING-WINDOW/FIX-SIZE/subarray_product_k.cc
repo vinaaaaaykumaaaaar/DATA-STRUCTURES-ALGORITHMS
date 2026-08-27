@@ -1,6 +1,53 @@
+/*
+Given an array of integers nums and an integer k, return the number of contiguous subarrays where the product of all the elements in the subarray is strictly less than k.
+
+Example 1:
+
+Input: nums = [10,5,2,6], k = 100
+Output: 8
+Explanation: The 8 subarrays that have product less than 100 are:
+[10], [5], [2], [6], [10, 5], [5, 2], [2, 6], [5, 2, 6]
+Note that [10, 5, 2] is not included as the product of 100 is not strictly less than k.
+Example 2:
+
+Input: nums = [1,2,3], k = 0
+Output: 0
+
+
+Constraints:
+
+1 <= nums.length <= 3 * 104
+1 <= nums[i] <= 1000
+0 <= k <= 106
+*/
+
 #include <iostream>
 #include <vector>
 using namespace std;
+
+int brute_force(vector<int> &arr, int k)
+{
+    int n = arr.size();
+
+    int total_count = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        long long prod = 1;
+        for (int j = i; j < n; j++)
+        {
+            prod = prod * arr[j];
+            if (prod < k)
+            {
+                total_count++;
+            }
+            else if (prod >= k)
+                break;
+        }
+    }
+
+    return total_count;
+}
 
 int sliding_window(vector<int> &arr, int k)
 {
@@ -13,21 +60,7 @@ int main()
 
     int k = 100;
 
-    int max_count = 0;
+    cout << brute_force(arr, k) << endl;
 
-    for (int i = 0; i < arr.size(); i++)
-    {
-        long long prod = 1;
-
-        for (int j = i; j < arr.size(); j++)
-        {
-            prod = prod * arr[j];
-            if (prod < k)
-                max_count++;
-            else
-                break;
-        }
-    }
-
-    cout << max_count << endl;
+    return 0;
 }
