@@ -2,6 +2,11 @@
 #include <vector>
 using namespace std;
 
+int sliding_window(vector<int> &arr, int k)
+{
+    int n = arr.size();
+}
+
 int main()
 {
     vector<int> arr = {10, 5, 2, 6};
