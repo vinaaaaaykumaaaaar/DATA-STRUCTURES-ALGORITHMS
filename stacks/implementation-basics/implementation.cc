@@ -77,6 +77,17 @@ public:
     }
 };
 
+/*
+| Operation | Time |
+| --------- | ---: |
+| `push()`  | O(1) |
+| `pop()`   | O(1) |
+| `top()`   | O(1) |
+| `empty()` | O(1) |
+| `size()`  | O(1) |
+
+*/
+
 int main()
 {
 
