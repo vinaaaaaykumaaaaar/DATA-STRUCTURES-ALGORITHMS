@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdexcept>
 
 using namespace std;
 
@@ -39,9 +38,9 @@ public:
     void push(int value)
     {
         Node *newNode = new Node(value);
-
         newNode->next = topNode;
         topNode = newNode;
+
         stackSize++;
     }
 
@@ -53,11 +52,9 @@ public:
         }
 
         Node *temp = topNode;
-
         topNode = topNode->next;
 
         delete temp;
-
         stackSize--;
     }
 
