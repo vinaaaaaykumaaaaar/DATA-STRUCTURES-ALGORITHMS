@@ -22,5 +22,6 @@ int main()
     // 2D vector
     vector<vector<int>> mat(10, vector<int>(10, 0)); // 10*10 matrix
 
-    
+    return 0;
 }
+
