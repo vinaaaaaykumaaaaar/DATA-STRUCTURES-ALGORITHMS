@@ -31,33 +31,26 @@ using namespace std;
         cerr << i << ", "; \
     cerr << "]\n"
 
-void count(vector<int> &arr)
+void dnf(vector<int> &arr)
 {
-    int c0 = 0, c1 = 0, c2 = 0;
+    int low = 0, mid = 0, high = arr.size() - 1;
 
-    for (auto x = 0; x < arr.size(); x++)
+    while (mid <= high)
     {
-        if (arr[x] == 0)
-            c0++;
-        else if (arr[x] == 1)
-            c1++;
+        if (arr[mid] == 0)
+        {
+            swap(arr[mid], arr[low]);
+            low++;
+            mid++;
+        }
+        else if (arr[mid] == 1)
+            mid++;
         else
-            c2++;
+        {
+            swap(arr[mid], arr[high]);
+            high--;
+        }
     }
-    cout << c0 << " " << c1 << " " << c2 << endl;
-    for (int i = 0; i < c0; i++)
-        arr[i] = 0;
-    for (auto x : arr)
-        cout << x << " ";
-    cout << endl;
-
-    for (int i = c0; i < c0 + c1; i++)
-        arr[i] = 1;
-    for (auto x : arr)
-        cout << x << " ";
-    cout << endl;
-    for (int i = c0 + c1; i < arr.size(); i++)
-        arr[i] = 2;
 
     for (auto x : arr)
         cout << x << " ";
@@ -67,7 +60,7 @@ void solve()
 {
     vector<int> arr = {0, 1, 2, 0, 1, 2, 1, 2, 0, 0, 0, 1};
 
-    count(arr);
+    dnf(arr);
 }
 
 int main()
