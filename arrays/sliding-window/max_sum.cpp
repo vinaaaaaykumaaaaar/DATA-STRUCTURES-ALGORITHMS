@@ -56,6 +56,31 @@ long long sliding_window(vector<int> &arr, int k)
     return maxSum;
 }
 
+long long sliding_window_single_loop(vector<int> &arr, int k)
+{
+    int n = arr.size();
+    long long windowSum = 0;
+
+    long long maxSum = LLONG_MIN;
+
+    for (int i = 0; i < n; i++)
+    {
+        windowSum += arr[i];
+
+        if (i >= k)
+        {
+            windowSum -= arr[i - k];
+        }
+
+        if (i >= k - 1)
+        {
+            maxSum = std::max(maxSum, windowSum);
+        }
+    }
+
+    return maxSum;
+}
+
 int main()
 {
     vector<int> arr = {1, 4, 2, 10, 23, 3, 1, 0, 20};
@@ -82,7 +107,9 @@ int main()
 
     // cout << maximumSubarraySum(arr, k) << endl;
 
-    cout << sliding_window(arr, k) << "\n";
+    // cout << sliding_window(arr, k) << "\n";
+
+    cout << sliding_window_single_loop(arr, k) << "\n";
 
     return 0;
 }
