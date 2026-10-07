@@ -9,21 +9,11 @@ int brute_force(vector<int> &arr, int k)
 
     int maxCount = 0;
 
-    for (int i = 0; i < arr.size(); i++)
+    int n = arr.size();
+
+    for (int i = 0; i < n; i++)
     {
-        int zeroCount = 0;
-        for (int j = i; j < arr.size(); j++)
-        {
-
-            if (arr[j] == 0)
-                zeroCount++;
-            if (zeroCount > k)
-                break;
-            maxCount = max(maxCount, j - i + 1);
-        }
     }
-
-    return maxCount;
 }
 
 int main()
