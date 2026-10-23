@@ -17,25 +17,30 @@
 #include <bitset>
 #include <cstring>
 using namespace std;
-#define ll long long
-
-#define debug(x) cerr << #x << " = " << (x) << "\n"
-#define debugArr(a, n)                               \
-    cerr << #a << " = [";                            \
-    for (int i = 0; i < (n); i++)                    \
-        cerr << (a)[i] << (i + 1 < (n) ? ", " : ""); \
-    cerr << "]\n"
-#define debugVec(v)        \
-    cerr << #v << " = [";  \
-    for (auto &i : v)      \
-        cerr << i << ", "; \
-    cerr << "]\n"
 
 class Solution
 {
 public:
     int subarraySum(vector<int> &nums, int k)
     {
+        int n = nums.size();
+
+        int c = 0;
+        for (int i = 0; i < n; ++i)
+        {
+            int sum = 0;
+            for (int j = i; j < n; ++j)
+            {
+                sum += nums[j];
+                if (sum == k)
+                {
+                    c++;
+                    break;
+                }
+            }
+        }
+
+        return c;
     }
 };
 
@@ -44,8 +49,8 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    vector<int> nums = {1, 1, 1};
-    int k = 2;
+    vector<int> nums = {1, 2, 3};
+    int k = 3;
 
     Solution s;
     cout << s.subarraySum(nums, k) << "\n";
