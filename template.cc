@@ -31,16 +31,17 @@ using namespace std;
         cerr << i << ", "; \
     cerr << "]\n"
 
-void solve()
+class Solution
 {
-}
+public:
+};
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    solve();
+    Solution s;
 
     return 0;
 }
