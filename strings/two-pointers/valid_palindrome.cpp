@@ -37,21 +37,20 @@ int main()
     // Test case containing punctuation, spaces, and numbers
     string s = "A man, a plan, a canal: Panama";
 
-    for (char &c : s)
-        c = to_lower(c);
-
-    string duplicate = "";
-
+    int write_index = 0;
     for (int i = 0; i < s.size(); ++i)
     {
-        // Updated to use the corrected alphanumeric check
-        if (is_alphanumeric(s[i]))
+        char lowered = to_lower(s[i]);
+        if (is_alphanumeric(lowered))
         {
-            duplicate += s[i];
+            s[write_index] = lowered;
+            write_index++;
         }
     }
 
-    if (is_palindrome(duplicate))
+    s.resize(write_index);
+
+    if (is_palindrome(s))
         cout << "palindrome";
     else
         cout << "not a palindrome";
