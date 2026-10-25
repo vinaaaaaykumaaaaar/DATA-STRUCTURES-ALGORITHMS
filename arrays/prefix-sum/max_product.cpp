@@ -12,14 +12,19 @@ public:
         int n = nums.size();
         int maxProd = INT_MIN;
 
+        int prefix = 1, suffix = 1;
+
         for (int i = 0; i < n; ++i)
         {
-            int curProd = 1;
-            for (int j = i; j < n; ++j)
-            {
-                curProd *= nums[j];
-                maxProd = max(curProd, maxProd);
-            }
+            if (prefix == 0)
+                prefix = 1;
+            if (suffix == 0)
+                suffix = 1;
+
+            prefix *= nums[i];
+            suffix *= nums[n - i - 1];
+
+            maxProd = max(maxProd, max(suffix, prefix));
         }
 
         return maxProd;
@@ -28,7 +33,7 @@ public:
 
 int main()
 {
-    vector<int> nums = {-2, 0, -1};
+    vector<int> nums = {2, 3, -2, 4};
 
     Solution sol;
 
