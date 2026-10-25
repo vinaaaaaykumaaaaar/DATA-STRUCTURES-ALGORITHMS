@@ -7,25 +7,31 @@ char to_lower(char c)
 {
     if (c >= 'A' && c <= 'Z')
         return c + 32;
-
     return c;
 }
 
-bool is_alphanumeric(char c)
+bool is_alphaNumeric(char c)
 {
-    if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9'))
-        return true;
-    return false;
+    return (c >= 'a' && c <= 'z') ||
+           (c >= 'A' && c <= 'Z') ||
+           (c >= '0' && c <= '9');
 }
 
-bool is_palindrome(string duplicate)
+bool is_palindrome(const string &s)
 {
-    int left = 0, right = duplicate.size() - 1;
+    int left = 0, right = s.size() - 1;
 
     while (left < right)
     {
-        if (duplicate[left] != duplicate[right])
+        while (left < right && !is_alphaNumeric(s[left]))
+            left++;
+
+        while (left < right && !is_alphaNumeric(s[right]))
+            right--;
+
+        if (to_lower(s[left]) != to_lower(s[right]))
             return false;
+
         left++, right--;
     }
 
@@ -34,26 +40,12 @@ bool is_palindrome(string duplicate)
 
 int main()
 {
-    // Test case containing punctuation, spaces, and numbers
     string s = "A man, a plan, a canal: Panama";
 
-    int write_index = 0;
-    for (int i = 0; i < s.size(); ++i)
-    {
-        char lowered = to_lower(s[i]);
-        if (is_alphanumeric(lowered))
-        {
-            s[write_index] = lowered;
-            write_index++;
-        }
-    }
-
-    s.resize(write_index);
-
     if (is_palindrome(s))
-        cout << "palindrome";
+        cout << "palindrome" << "\n";
     else
-        cout << "not a palindrome";
+        cout << "not a palindrome" << "\n";
 
     return 0;
 }
