@@ -1,16 +1,30 @@
 #include <iostream>
+
 using namespace std;
 
-class LinkedList
+struct Node
 {
-private:
-};
+    int data;
+    Node *next;
 
+    Node(int value)
+    {
+        this->data = value;
+        this->next = nullptr;
+    }
+};
 int main()
 {
-    int *a = new int[10];
-    a[0] = 10;
-    a[2] = 20;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
-    cout << a[0] << " " << a[1] << endl;
+    Node *node1 = new Node(10);
+    Node *node2 = new Node(20);
+
+    node1->next = node2;
+
+    cout << node1->data << endl;
+    cout << node1->next->data << endl;
+
+    return 0;
 }
