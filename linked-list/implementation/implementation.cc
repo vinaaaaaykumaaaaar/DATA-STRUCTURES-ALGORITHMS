@@ -103,6 +103,74 @@ void deleteAtFront(Node *&head)
     delete nodeToDelete;
 }
 
+void deleteAtEnd(Node *&head)
+{
+    // Case 1: Empty list
+    if (head == nullptr)
+        return;
+
+    // Case 2: Only one node
+    if (head->next == nullptr)
+    {
+        delete head;
+        head = nullptr;
+        return;
+    }
+
+    // Case 3: Multiple nodes
+    Node *temp = head;
+
+    // Stop at the second-last node
+    while (temp->next->next != nullptr)
+    {
+        temp = temp->next;
+    }
+
+    // Delete the last node
+    Node *nodeToDelete = temp->next;
+
+    temp->next = nullptr;
+
+    delete nodeToDelete;
+}
+
+void deleteAtPos(Node *&head, int k)
+{
+    // Invalid position or empty list
+    if (head == nullptr || k < 1)
+        return;
+
+    // Case 1: Delete the first node
+    if (k == 1)
+    {
+        Node *temp = head;
+
+        head = head->next;
+
+        delete temp;
+        return;
+    }
+
+    // Case 2: Find the node before the target
+    Node *prev = head;
+
+    for (int i = 1; i < k - 1 && prev != nullptr; i++)
+    {
+        prev = prev->next;
+    }
+
+    // Check whether target node exists
+    if (prev == nullptr || prev->next == nullptr)
+        return;
+
+    // Delete the target node
+    Node *nodeToDelete = prev->next;
+
+    prev->next = nodeToDelete->next;
+
+    delete nodeToDelete;
+}
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -125,6 +193,11 @@ int main()
     print(node1);
     deleteAtFront(node1);
 
+    print(node1);
+    deleteAtEnd(node1);
+    print(node1);
+
+    deleteAtPos(node1, 3);
     print(node1);
 
     return 0;
