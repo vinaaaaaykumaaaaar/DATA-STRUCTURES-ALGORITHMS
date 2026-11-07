@@ -91,6 +91,18 @@ void insertAtPosition(Node *&head, int value, int k)
     pos->next = newNode;
 }
 
+void deleteAtFront(Node *&head)
+{
+    if (head == nullptr)
+        return;
+
+    Node *nodeToDelete = head;
+
+    head = head->next;
+
+    delete nodeToDelete;
+}
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -110,6 +122,9 @@ int main()
     insertAtEnd(node1, 50);
     print(node1);
     insertAtPosition(node1, 25, 4);
+    print(node1);
+    deleteAtFront(node1);
+
     print(node1);
 
     return 0;
