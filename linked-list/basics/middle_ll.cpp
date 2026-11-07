@@ -74,6 +74,20 @@ void deleteAlternateNode(Node *&head)
     }
 }
 
+void middle(Node *head)
+{
+    Node *fast = head;
+    Node *slow = head;
+
+    while (fast != nullptr && fast->next != nullptr)
+    {
+        fast = fast->next->next;
+        slow = slow->next;
+    }
+
+    cout << slow->data << endl;
+}
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -84,12 +98,15 @@ int main()
     insertAtEnd(node, 30);
     insertAtEnd(node, 40);
     insertAtEnd(node, 50);
+    insertAtEnd(node, 60);
 
     print(node);
 
-    deleteAlternateNode(node);
+    // deleteAlternateNode(node);
 
     print(node);
+
+    middle(node);
 
     return 0;
 }
